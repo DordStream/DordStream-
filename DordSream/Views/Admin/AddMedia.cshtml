@@ -1,0 +1,61 @@
+﻿@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Add Media";
+}
+
+@section scripts{
+
+    <script src="/adminwwwroot/js/991ee7af-173d-4203-b2c0-45a48737ab13.js" asp-append-version="true"></script>
+}
+
+
+<div class="container-fluid right-over-flow right-over-flow-f pl-2 shadow-sm border">
+
+
+    <div class="d-block m-5">
+        <h4>Upload Your Media </h4>
+        <p class="text-muted mt-4 small">add your media to server. the maximum file size is 2GB</p>
+
+        <form method="post" asp-route="addmedia" enctype="multipart/form-data" onsubmit="upload(this); return false" class="form-group mt-5">
+            <div class="progress mt-3 w-75 mb-2" style="display:none;" id="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="progressbar">
+
+                </div>
+            </div>
+            <div class="input-group align-items-baseline align-content-center mt-2">
+                <input type="checkbox" class="custom-checkbox" id="addMeta" />
+                <p class="ml-2">Add MetaData</p>
+            </div>
+           
+            <div id="meta" style="display: none" class="mb-4">
+                <div class="form-group">
+                    <input type="text" name="Artist" class="form-control" placeholder="Artist Name" />
+                </div>
+                <div class="form-group">
+                    <input type="text" name="Album" class="form-control" placeholder="Album Name" />
+                </div>
+                <div class="form-group">
+                    <input type="date" name="ReleasedDate" class="form-control" placeholder="Released Date" />
+                </div>
+                <div class="form-group mt-4">
+                    <input type="file" class="form-control borderless border-bottom mb-1 form-control-file w-75" name="File" id="File" accept="image/*"  title="Poster Image"/>
+                   
+                </div>
+            </div>
+
+            <div class="form-group mt-5">
+                <input type="file" class="form-control borderless border-bottom mb-1 form-control-file w-75" name="Files" id="Files" accept="*" multiple required/>
+                <i class="text-danger ml-4 mt-3" id="error"> </i>
+            </div>
+            <div class="input-group justify-content-start mt-5 ml-2">
+                <input type="submit" class="btn btn-outline-danger" name="addMediaSubmit" value="Upload" />
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+</div>
+

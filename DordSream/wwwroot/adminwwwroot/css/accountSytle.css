@@ -1,0 +1,34 @@
+﻿#body {
+   background-image: url(../images/login.jpg);
+   background-repeat: no-repeat;
+   background-clip: border-box;
+   background-size: cover;
+}
+.login-card{
+    width: 50%;
+    margin-top: 20px;
+    border: 1px ridge gainsboro;
+}
+.edit-img
+{
+    height: 200px;
+   width: 200px;
+}
+.edit-card{
+    width: 75%;
+}
+@media(max-width: 700px) {
+    .login-card{
+        width: 100%;
+    }
+}
+@media(max-width: 500px)
+{
+    .edit-img {
+        height: 120px;
+        width: 120px;
+    }
+    .edit-card{
+        width: 100%;
+    }
+}
