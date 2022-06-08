@@ -36,30 +36,6 @@ This section shows the result and /or findings of the research.
 
 
 
-
-
-
-
-
-What is Content Management System (CMS)?
-A content management system (CMS) is a computer software used to manage the creation and modification of digital content.
-OR
-A content management system (CMS) is a computer software or application that uses database to manage all the content and it can be used when developing a website.
-
-The Content Management System Software Developed was named DordStream
-DordStream is a computer software used in creating, modification of digital content and translate Dshtml tag.
-
-
-
-
-
-
-
-
-
-
-
-
 Introduction to DordStream
 Dordstream is a free and open source content management system software written in Asp.net and paired with MSSQL server.
 DordSream is a CMS designed software which also server as translator i.e. translate Dshtml
@@ -87,100 +63,6 @@ DordStream has the following features
 20.	It allows to enable ip address verification.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-What is Html Tag?
-Html tags are like keywords that defines how web browser will format and display the content. With the help of the tags a web browser can distinguish between a html content and a simple content. For more details about Html, visit https://www.w3school.com.
-The Html-like tag was named Dshtml Tag.
-What is Dshtml Tag?
-Dshtml tag is a set of custom tag that extend the function of html through the CMS.
-Dshtml is also html-like that is used to perform some tasks within the CMS and web browser will display and format the same as html content.
-
-Similarities between html tag and dshtml tag are
-1.	All html tags and dshtml tags must be enclosed within angle bracket (< >) while dshtml tags.
-2.	Every tag in html and dshtml perform different tasks.
-3.	Html tags are, <p>, <h1>, <strong>, <li>, <a> …etc. for more details visit https://www.w3school.com. While dshtml tags are, <audiolist>, <videolist>,  <blogbody>, <featureposts>, <recentposts>, <posttypes>, <multiplecomments>, <multiplelabels>, <multiplepages>, <pagination>, <logout>, <singlepage>, <singlepost>, <sitename>, <widget>, <layout>, <top>, <left>, <right>, <bottom>.
-4.	Html Tag can be use with html attributes and events while dshtml can be use with dshtml attribute only.
-5.	Html attributes are id, class, title, src, name, alt, …etc. for more details visit https://www.w3school.com. While Dshtml attributes are ds-artist, ds-album, ds-count, ds-widget, ds-index, ds-name, ds-description, ds-title-length, ds-content-length, ds-label-exclude, ds-text, ds-type, ds-title, ds-src, ds-link, ds-releasedate, ds-date, ds-size, ds-firstletter, ds-time, ds-username, ds-link-type, ds-content, ds-image, ds-video, ds-sociallink, ds-author, ds-commentcount, ds-error, ds-email, ds-subject, ds-message, ds-password, ds-pageindex, ds-phonenumber, ds-firstname, ds-lastname.s
-
-
-
-DordStream Html Attributes (dshtml attributes)
-Dshtml attributes are special words used inside the opening tag to control the element behaviors. Dshtml attributes are modifier of a Dshtml element type. An attribute either modifies the default functionality to certain element types unable to function correctly without them. In Dshtml syntax, an attribute is added to a Dshtml start tag.
-Several basic attributes types have been recognized, including (1) required attributes, needed by a particular element type for that element type to function correctly. (2) optional attributes, used to modify the default functionality of an element type. (3) standard attributes, supported by many element types.
-Dshtml attributes generally appear as name-value pairs, separated by = and are written within the start tag of an element, after the element name;
-<element attribute=”value”> element</element>
-Where element name is the Dshtml element type, and attribute is the name of the attribute, set to the provided value. The value may be enclosed in double quotes.
-
-Required Attributes
-These are the attributes that is required when using dshtml element.
-1.	Name (ds-name): This attribute provides a unique identifier for an element i.e. unique name.
-2.	Description (ds-description): This attribute provides full description for an element.
-3.	Artist (ds-artist): This attribute provides the artist name for an element. It can only be used with audiolist and videolist dshtml element.
-4.	Album (ds-album): This attribute provides the album name for an element. It can only be used with audiolist and videolist dshtml element.
-5.	Type (ds-type): This attribute provides the label name for an element. It can only be used with posttypes element.
-
-
-Optional Attributes
-These are the attributes that is optional when using dshtml element.
-1.	Count (ds-count): This attribute provides the number of children for an element.
-2.	Widget (ds-widget): This attribute identifies an element as widget on the CMS. It takes widget as value.
-3.	Exclude (ds-label-exclude): This attribute provides the label name(s) to be excluded from the CMS to an element.
-4.	Index (ds-index): This attribute provides the position (index) for accessing an element.
-5.	Title Length (ds-title-length): This attribute provides the title length of the children element that make use of either title as parameter or ds-title as attribute. It can be used with dshtml element and div, ul html element.
-6.	Content Length (ds-content-length): This attribute provides the content length of the children element that make use of either content as parameter or ds-content as attribute. It can be used with dshtml element and div, ul html element.
-7.	Parent (ds-parent): This attribute provides the dshtml element name. It can only be when div or ul is the parent element and it cannot be use with dshtml element. Its values are label, page, comment, pagination, body, recent, feature and label name.
-8.	Text (ds-text): This attribute provides the text for auth element. e.g. welcome or greetings text.
-
-
-
-Standard Attributes
-These are the attributes used with sibling’s element, when div or ul is use as the parent tag. It takes 1 as value. These attributes can also be used as parameter when using the attribute as value to id html attribute. It can be use as parameter when removing the prefix (ds-). These attributes have the same function as the parameter and different usage. The similarity between this attribute and the parameter is that  , The attribute take 1 as value and it is only use as children attribute when div or ul is used as parent tag while The parameter is use as value to id attribute and it is use as children attribute when dshtml tag is used as parent element.
-The attribute that is also used as the parameter change or replace the content or link of the assign element.
-Example of standard attributes
-<div ds-parent=”label”>
-<img ds-image=”1” alt=”Image”/>
-</div>
-Example of the parameter
-<multiplelabels>
-<img id=”image” alt=”Image” />
-</multiplelabels>
-Example 1 make use of div tag as parent element (html tag) and the attribute ds-image as sibling or children element attribute which take 1 as value.
-Example 2 make use of multiplelabels tag (dshtml tag) as parent tag and use id attribute with image as value.
-The two examples have different syntax but produce the same result.
-
-
-These are the attributes that is also used as parameter (removing the prefix ds-).
-1.	Name (ds-name): This is the label name. i.e. the label name creating when publishing post on the CMS.
-2.	Title (ds-title): This is the title of the post. i.e. the title of the post published on the CMS.
-3.	Content (ds-content): This is content or body of the post. i.e. the body post published on the CMS.
-4.	Image (ds-image): This is the first image contain in the body of the post. It can only be use with img element.
-5.	Video (ds-video): This is the first video contain in the body of the post. It can only be use with video element.
-6.	Audio (ds-audio): This is the first image contain in the body of the post. It can only be use with audio element.
-7.	Link (ds-link): This is the link to the post. i.e. the link to access the particular post. It can only be use with a element. In a scenario where multiple links are needed ds-link1, ds-link2, ds-link3, ds-link4 can be used.
-8.	Author (ds-author): This is the author that make publication. i.e. author that create the post on the CMS.
-9.	Date (ds-date): This is the publication date. i.e. the date the post was published or created.
-10.	Time (ds-time): This is the publication time. i.e. the time the post was published or created.
-11.	CommentCount (ds-commentcount): This is the total number of users commented on a post. i.e. the number of users that make a comment on the particular post.
-12.	Id (ds-id): This is the post unique Identifier. i.e. the postId.
-13.	FirstLetter (ds-firstletter): This is first letter of the post title. 
-14.	SocialLink (ds-sociallink): This is used when social media is required, the link to the post will be append to the provided social link. In a scenario where multiple social links are needed ds-sociallink1, ds-sociallink2, ds-sociallink3, ds-sociallink4 can be used.
-15.	#Name or ##Name: this cannot be use as attribute or parameter. It can only be use as value when label name is needed for accessing through javascript. It can only be use as attribute value. e.g. <a data-target=”#name”>Click me</a> #name will change to the label name when access through browser.
-16.	Src (ds-src): This is link to the audio file which can be used with source html element.
 
 
 
@@ -811,20 +693,17 @@ First Method
    <singlepage ds-name="View Page Tag" ds-description="Shows the view page">
                         <div class="container-fluid" style="min-height: 1500px">
                             <h5 class="text-center" id="name"></h5>
-
-                            <span id="content" class="mt-3"></span>
-
+                         <span id="content" class="mt-3"></span>
                         </div>
                     </singlepage>
 
 Second Method                 
-   <div ds-single-parent=”page” ds-name="View Page Tag" ds-description="Shows the view page">
+ 
+  <div ds-single-parent=”page” ds-name="View Page Tag" ds-description="Shows the view page">
                         <div class="container-fluid" style="min-height: 1500px">
                             <h5 class="text-center" ds-name=”1"></h5>
-
-                            <span ds-content=”1" class="mt-3"></span>
-
-                        </div>
+                         <span ds-content=”1" class="mt-3"></span>
+                             </div>
                     </div>
 
 
