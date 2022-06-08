@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewData["Title"] = "Messages";
+    Layout = "_AdminLayout";
+}
+@section Scripts{
+    <script src="/adminwwwroot/js/a4cad585-a56f-44b1-90a6-6ef98c1f41ed.js" asp-append-version="true"></script>
+}
+<div class="container-fluid shadow-sm border" id="main">
+    <div class="plus">
+        <a title="Create New" href="/admin/newmail">
+            <i class="fa fa-plus-circle plus-icon">
+
+            </i>
+        </a>
+    </div>
+    <div class="media mb-3 mt-3 justify-content-between align-items-baseline">
+
+        <div class="mr-auto">
+            <select class="form-control borderless header-input" id="mailTypeSelect">
+                <option value="Inbox">Inbox </option>
+                <option value="Sent">Sent</option>
+                <option value="Drafts">Drafts</option>
+                <option value="Archive">Archive</option>
+                <option value="Deleted">Deleted</option>
+                <option value="Junk">Junk</option>
+                <option value="Outbox">Outbox</option>
+                <option value="Notes">Notes</option>
+            </select>
+        </div>
+
+        <input type="date" class="custom-control borderless border-bottom ml-auto mr-auto header-input" id="messageDate" />
+
+
+
+    </div>
+    <div class="right-over-flow">
+        <ul class="list-group" id="messageList">
+
+
+        </ul>
+    </div>
+
+
+</div>
+<input type="hidden" id="messages" value="messages" />

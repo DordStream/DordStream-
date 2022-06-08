@@ -1,0 +1,99 @@
+﻿@{
+    ViewData["Title"] = "Posts";
+    Layout = "_AdminLayout";
+}
+
+@section scripts{
+
+    <script src="/adminwwwroot/js/f222cb77-4e37-4195-9ab0-51b3407a8739.js" asp-append-version="true"></script>
+
+}
+
+
+<div class="container-fluid shadow-sm border">
+
+    <div class="plus">
+        <a title="Create New" href="/admin/newpost">
+            <i class="fa fa-plus-circle plus-icon">
+
+            </i>
+        </a>
+    </div>
+
+    <div class="media mb-3 mt-3 justify-content-between">
+
+        <div class="mr-auto">
+            <select class="form-control borderless header-input" id="selectposttype">
+                <option value="all" id="total">All (0)</option>
+                <option value="publish" id="totalpublish">Publish (0)</option>
+                <option value="draft" id="totaldraft">Draft (0)</option>
+
+            </select>
+        </div>
+        <input type="text" class="custom-control borderless border-bottom ml-auto mr-auto header-input" placeholder="Post Name" id="postNameSearch" />
+        <input type="date" class="custom-control borderless border-bottom ml-auto mr-auto header-input" id="dateSearch" />
+        <input type="checkbox" class="custom-control custom-checkbox header-checkbox" id="allcheck" />
+
+
+
+    </div>
+    <div id="selectedItem">
+        <div class="media border justify-content-around pt-2 pb-1 mt-2 align-items-baseline">
+            <div class="input-group">
+                <a href="#" class="close mr-2" id="selectedItemIClose">&times;</a>
+                |
+                <p class="ml-2 selected-text" id="selected"></p>
+            </div>
+            <div class="input-group justify-content-end ml-auto">
+                <a href="#" title="Delete" class="mr-3" id="delete_all">
+                    <i class="fa fa-trash text-success"></i>
+                </a>
+                <a href="#" title="Unpublish" class="mr-3" id="unpublish_all">
+                    <i class="fa fa-trash-restore text-success"></i>
+                </a>
+                <a href="#" title="Apply Label" class="mr-3" data-toggle="modal" data-target="#labelContainer">
+                    <i class="fa fa-tag text-success"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main right-over-flow" id="main">
+
+
+    </div>
+
+</div>
+<input type="hidden" id="posts" value="posts" />
+
+
+
+<!--Apply Labels-->
+<div class="modal" id="labelContainer">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+            <div class="modal-body">
+                <input type="text" placeholder="Label" class="form-control borderless border-bottom mb-4 mt-3" id="LabelsInput" />
+                <div class="input-group justify-content-end mt-5">
+                    <a href="#" class="btn btn-outline-danger mr-5" data-dismiss="modal">Cancel</a>
+                    <button type="button" class="btn btn-outline-success applyLabel" id="applyLabelsBtn">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End-->
+<!--Apply Label-->
+<div class="modal" id="singleLabelContainer">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+            <div class="modal-body">
+                <input type="text" placeholder="Label" class="form-control borderless border-bottom mb-4 mt-3" id="LabelInput" />
+                <div class="input-group justify-content-end mt-5">
+                    <a href="#" class="btn btn-outline-danger mr-5" data-dismiss="modal">Cancel</a>
+                    <button type="button" class="btn btn-outline-success applyLabel" id="applyLabelBtn">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End-->
