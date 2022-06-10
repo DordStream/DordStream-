@@ -14,11 +14,11 @@
     <div class="input-group mt-4 mb-2">
         <div class="mr-auto w-50">
             <select class="form-control" id="templateType">
-                @foreach(string file in Model.HtmlFile)
+                @foreach (string file in Model.HtmlFile)
                 {
-                <option value="@file">@file</option>
+                    <option value="@file">@file</option>
                 }
-               
+
             </select>
         </div>
         <div class="ml-auto">

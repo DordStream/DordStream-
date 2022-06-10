@@ -1,15 +1,15 @@
 ﻿@using BcwebtonTechnologies.BloggerDotCore
 @using Microsoft.AspNetCore.Html
-@model Mail 
+@model Mail
 @{
     ViewData["Title"] = "View Message";
     Layout = "_AdminLayout";
     var HtmlBody = new HtmlString(Model.Body);
-   
+
 }
 @section Scripts{
     <script src="/adminwwwroot/js/a4cad585-a56f-44b1-90a6-6ef98c1f41ed.js" asp-append-version="true"></script>
-  
+
 }
 <div class="container-fluid right-over-flow">
     <div class="border m-4"></div>
@@ -37,7 +37,7 @@
 
     </div>
     <div class="message-content">
-      @HtmlBody
+        @HtmlBody
 
 
     </div>

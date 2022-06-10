@@ -13,7 +13,7 @@
         <h4>Upload Your Theme</h4>
         <p class="text-muted mt-4 small">the template must be in zip file and contains( (index or landing or both files), banner file(.jpg or .png) and readme.txt)  the maximum file size is 2GB </p>
 
-        <form method="post"  asp-route="addtheme" enctype="multipart/form-data" onsubmit="upload(this); return false" class="form-group mt-5">
+        <form method="post" asp-route="addtheme" enctype="multipart/form-data" onsubmit="upload(this); return false" class="form-group mt-5" asp-antiforgery="false">
             <div class="progress mt-3 w-75" style="display:none;" id="progress">
                 <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="progressbar">
 
@@ -24,7 +24,7 @@
                 <i class="text-danger ml-4 mt-3" id="Themerror"> </i>
             </div>
             <div class="input-group justify-content-start mt-5 ml-2">
-                <input type="submit" class="btn btn-outline-danger" name="newThemeSubmit" value="Upload"/>
+                <input type="submit" class="btn btn-outline-danger" name="newThemeSubmit" value="Upload" />
             </div>
         </form>
     </div>

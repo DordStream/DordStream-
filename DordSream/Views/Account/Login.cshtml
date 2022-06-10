@@ -1,5 +1,5 @@
 @{ Layout=""; 
-  var returnUrl = Context.Request.Query["returnurl"];}
+  var returnUrl = Context.Request.Query["ReturnUrl"];}
 @model BloggerDotCore.Models.Login
 <!DOCTYPE html>
 <html lang="en" class="overflow-auto">
@@ -22,7 +22,7 @@
                 <h3 class="card-title text-center">Login Page</h3>
             </div>
             <div class="card-body mt-2 border-0">
-                <form method="post" asp-route="Login" asp-route-returnurl="@returnUrl" asp-antiforgery="false">
+                <form method="post" asp-route="Login" asp-route-ReturnUrl="@returnUrl" asp-antiforgery="false">
                     <div asp-validation-summary="All" class="form-group mb-2 text-danger">
 
                     </div>

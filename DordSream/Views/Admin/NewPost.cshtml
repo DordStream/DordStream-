@@ -152,17 +152,17 @@
                             var xhr = new XMLHttpRequest();
                             var formData = new FormData();
                             formData.append("File", files[0]);
-                              xhr.onload = function () {
-                                    if (this.readyState == 4 && this.status == 200) {
-                                        var fileModel = JSON.parse(this.responseText);
-                                        editor.image.insert(fileModel.filePath, null, null, editor.image.get());
+                            xhr.onload = function () {
+                                if (this.readyState == 4 && this.status == 200) {
+                                    var fileModel = JSON.parse(this.responseText);
+                                    editor.image.insert(fileModel.filePath, null, null, editor.image.get());
 
-                                    }
                                 }
+                            }
 
-                                xhr.open("POST", "/admin/upload");
-                                xhr.send(formData);
-                           
+                            xhr.open("POST", "/admin/upload");
+                            xhr.send(formData);
+
 
                         }
                         return false
