@@ -1,4 +1,4 @@
-﻿
+﻿@inject IWidgetMemoryCache MemoryCache
 @{
     ViewData["Title"] = "New Mail";
     Layout = "";
@@ -83,6 +83,8 @@
         <div class="clearfix"></div>
 
     </div>
+
+    <input type="hidden" class="form-control new-title shadow-none" id="token" value="@MemoryCache.GetToken().Result" />
     <script type="text/javascript"
             src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
     <script type="text/javascript"
@@ -135,89 +137,6 @@
     <script src="/adminwwwroot/font-awesome/js/all.min.js"></script>
     <script src="/adminwwwroot/js/microsoft/signalr/dist/browser/signalr.min.js"></script>
     <script src="/adminwwwroot/js/a4cad585-a56f-44b1-90a6-6ef98c1f41ed.js" asp-append-version="true"></script>
-    <script>
-        (function () {
-            const editorInstance = new FroalaEditor('#content', {
-                // Set maximum number of characters.
-                charCounterMax: 20000000000,
-                fontSizeDefaultSelection: '12',
-                events: {
-                    'image.beforeUpload': function (files) {
-                        const editor = this;
-                        if (files.length) {
-                            var xhr = new XMLHttpRequest();
-                            var formData = new FormData();
-                            formData.append("File", files[0]);
-                            xhr.onload = function () {
-                                if (this.readyState == 4 && this.status == 200) {
-                                    var fileModel = JSON.parse(this.responseText);
-                                    editor.image.insert(fileModel.filePath, null, null, editor.image.get());
-                                }
-                            }
-
-                            xhr.open("POST", "/admin/upload");
-                            xhr.send(formData);
-
-
-                        }
-                        return false
-                    },
-                    'video.beforeUpload': function (files) {
-                        const editor = this;
-                        if (files.length) {
-                            var xhr = new XMLHttpRequest();
-                            var formData = new FormData();
-                            formData.append("File", files[0]);
-                            xhr.onload = function () {
-                                if (this.readyState == 4 && this.status == 200) {
-                                    var fileModel = JSON.parse(this.responseText);
-                                    var videoElment = "<video width='320' height='240' controls><source src=" + "\"" + fileModel.filePath + "\"" + " " + "type=" + "\"" + "video/" + fileModel.extension + "\"" + " " + "> Your browser does not support the video tag </video> ";
-                                    editor.video.insert(videoElment);
-                                }
-                            }
-
-                            xhr.open("POST", "/admin/upload");
-                            xhr.send(formData);
-
-
-                        }
-                        return false;
-                    },
-                    'file.beforeUpload': function (files) {
-                        const editor = this;
-                        if (files.length) {
-                            var xhr = new XMLHttpRequest();
-                            var formData = new FormData();
-                            formData.append("File", files[0]);
-                            xhr.onload = function () {
-                                if (this.readyState == 4 && this.status == 200) {
-                                    var fileModel = JSON.parse(this.responseText);
-                                    switch (fileModel.type) {
-                                        case "Audio":
-                                            var audioElment = "<audio width='320' height='240' controls><source src=" + "\"" + fileModel.filePath + "\"" + " " + "type=" + "\"" + "audio/" + fileModel.extension + "\"" + " " + "> Your browser does not support the audio tag </audio> ";
-                                            editor.video.insert(audioElment);
-                                            break;
-                                        case "Document":
-                                            editor.file.insert(fileModel.filePath, fileModel.fileName, { link: fileModel.filePath });
-                                            break;
-                                        default:
-                                            break;
-                                    }
-
-                                }
-                            }
-
-                            xhr.open("POST", "/admin/upload");
-                            xhr.send(formData);
-
-
-                        }
-                        return false;
-                    }
-                }
-
-            })
-        })()
-    </script>
+    <script src="/adminwwwroot/Editor/editor.js" asp-append-version="true"></script>
 </body>
 </html>
