@@ -1,45 +1,13 @@
-                                   
-                              ABSTRACT
-This research titled ‘Dord Stream’ aims to show the alternative procedure and of course a newly developed simple process for front-end developer to work as full-stack developer. This research has been worked on in order to make what has been seemingly difficult easy. Therefore, this research has been able to develop html-like tag (dshtml) and SQL query (Javascript) that can help front-end developer create a web application through the software. Arguably, the creation, building and development of web application is a taxing exercise. However, this research introduces another less-difficult procedure in the creation of web application. 
-
-
-
-
-
-
-Aims and Objectives
-This section explicates the aims and objective of the research which is to make or allow front-end developer to work as full-stack developer.
-
-
-
-
-
-
-Methodology
-This section expounds the methodology deployed in the creation of the software.
-
-1.	Development of Content Management System (CMS) Software (DordStream).
-2.	Introduction of DordStream Html (Dshtml) on the CMS.
-3.	Introduction of Structured Query language (SQL) on the CMS
-
-
-
-
-Results / Findings
-This section shows the result and /or findings of the research.
-1.	That a software that can be used to develop desire web application
-
-
-
-
-
-
-
-
 Introduction to DordStream
-Dordstream is a free and open source content management system software written in Asp.net and paired with MSSQL server.
-DordSream is a CMS designed software which also server as translator i.e. translate Dshtml
-DordStream is a Template based CMS software which the website or web application has to be developed in the template design structure and installed for usage.
+
+Dordstream is a free and open source content management system software written in C# and paired with MSSQL server.
+DordSream is a content management system software that:
+(1)	Allow to perform database operation through Javascript (Introduced SQL Query).
+(2)	Allow to develop blog and website with Html Document (Intoduced Dshtml Tag).
+(3)	Allow to develop web software.
+
+DordStream is a Template based CMS software I.e. The website or blog or web software has to be developed in template design structure and installed for usage.
+
 DordStream has the following features
 1.	It allows multi user website or web application or blog.
 2.	It is template-based.
@@ -66,52 +34,71 @@ DordStream has the following features
 
 
 
-
-DordStream Html Tag (dshtml tag)
-Dshtml tag is a set of custom tag that extend the function of html through the CMS. It is also html-like that is used to perform some tasks within the CMS and displayed, formatted the same as html content on web browser. It has the same syntax as html 
-Dshtml element can only be written as a child tag to html. i.e. it must be written inside html element.
-Dshtml attributes can be written with dshtml element and html element.
-Dshtml parameters can only be written inside dshtml element.
-NOTE, Dshtml tag depend on dshtml attribute or dshtml parameter to perform the task.
-These are the dshtml tags
-
-1.	AudioList (audiolist) 
- Audio List is a dshtml tag which is used with audio html tag in order to get or display the audio files. Audio files can be retrieved with the dshtml parameters.
-It is also case sensitive (lower case). 
-It can be written as <audiolist> children element </audiolist>
-Attributes:  Artist(ds-artist), Album(ds-album), Count(ds-count), Widget(widget), Index(ds-index), Name(ds-name), Description(ds-description).
-Parameters: Title, Name, Src, Link, Artist, Album, ReleaseDate, Date, Size, FirstLetter, Time
-
-Code example
-The snippet code retrieved 30 davido’s audio files from the album named One mill and display on web browser.
-
-<audiolist ds-artist="davido" ds-album="One Mill" ds-count="30" ds-name="Video List" ds-description="Audio List">
-<audio controls id="video">
-<source src="#" id="src">
-</audio>
-</audiolist>
+Example of Introduced Dshtml Tag
+<!--
+ <auth ds-text="Welcome!">
+   <p id="username">Bellie_Coin</p>
+    <li><a href="#" id="register">Registration</a></li> 
+     <li><a href="#" id="login">Login</a></li>
+      </auth>
+      -->
+    
 
 
 
+Example of Introduced SQL
 
 
-SQL Queries and Examples
-
-
-Creating of table, Columns and Adding values Query
-The query below creates a table with the columns and insert the rows/values, if the table is not existing in the database otherwise, it will insert the rows/values.
-Add Column1=Value1, Column2=Value2, Column3=Value3 Into TableName.
-Note: the keywords are not case sensitive. i.e. it can be written Lowercase, Uppercase and Capitalize.
-Example
-The snippet code below creates student table with their name, age, address and insert their values if student table is not existing in the database otherwise, it will insert their values.
 window.onload = function() {
 let dbConnection= new DbConnection();
 let context = dbConnection.context;
 dbConnection.open(function() {
-let addQuery=”add Name=@1, Age=@2, Address=@3 into Student”;
-context.executeQuery(addQuery,”SomeoneName”,15,”no 12 someone address”,(done,error)=>{ alert(error); });
+let addQuery="add Name=@1, Age=@2, Address=@3 into Student";
+context.executeQuery(addQuery,"SomeoneName",15,"no 12 someone address",(done,error)=>{ alert(error); });
 });}
 Where the name, age, address are the columns and @number is the value identifier.
+
+
+
+
+
+
+
+Security
+
+•	IPAddress Verification
+•	Role Based
+• Cross Site Script (XSS)
+•	SQL Injection
+
+
+
+
+
+
+
+
+
+
+
+References
+•	Froala Editor
+•	Microsoft Cooperation
+•	Agility Html Pack
+
+
+Admin Login Details
+
+•	Username: DordStream
+•	Password: Admin32@
+ 
+ Note: You are advise to add your credentials and delete the old credential
+
+
+Released Version: Version 1.1
+
+
+Released Date: July 1 2022
 
 
 Download the zip code and read the full tutorial from DordStream.pdf 

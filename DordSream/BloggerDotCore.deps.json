@@ -31,7 +31,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "BloggerDotCore/1.0.0": {
+      "BloggerDotCore/1.1": {
         "dependencies": {
           "HtmlAgilityPack": "1.11.36",
           "Microsoft.AspNetCore.HttpOverrides": "2.2.0",
@@ -3377,7 +3377,7 @@
     }
   },
   "libraries": {
-    "BloggerDotCore/1.0.0": {
+    "BloggerDotCore/1.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
