@@ -35,13 +35,12 @@ DordStream has the following features
 
 
 Example of Introduced Dshtml Tag
-<!--
  <auth ds-text="Welcome!">
    <p id="username">Bellie_Coin</p>
     <li><a href="#" id="register">Registration</a></li> 
      <li><a href="#" id="login">Login</a></li>
       </auth>
-      -->
+     
     
 
 
