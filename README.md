@@ -1,10 +1,11 @@
-Introduction to DordStream
+PROJECT TITLE: Development of Content Management System Software(CMS) titled DordStream, Discovery Of DSSQL Query and DSHtml Tag
 
-Dordstream is a free and open source content management system software written in C# and paired with MSSQL server.
-DordSream is a content management system software that:
-(1)	Allow to perform database operation through Javascript (Introduced SQL Query).
-(2)	Allow to develop blog and website with Html Document (Intoduced Dshtml Tag).
-(3)	Allow to develop web software.
+DORDSTREAM
+
+Dordstream is a free and open source content management system software written in C# and paired with MSSQL server which:
+(1)	Allow to perform database operation through Javascript.
+(2)	Allow to develop blog and website with Html Document.
+(3)	Allow to develop web application.
 
 DordStream is a Template based CMS software I.e. The website or blog or web software has to be developed in template design structure and installed for usage.
 
@@ -34,16 +35,28 @@ DordStream has the following features
 
 
 
+DSHTML TAG
+
+Dshtml tag is a set of custom tag which extend the function of html through the CMS. It is also html-like that is used to perform some tasks within the CMS and displayed, formatted the same as html content on web browser. It has the same syntax as html 
+
+
 Example of Introduced Dshtml Tag
-<!--
- <auth ds-text="Welcome!">
-   <p id="username">Bellie_Coin</p>
-    <li><a href="#" id="register">Registration</a></li> 
-     <li><a href="#" id="login">Login</a></li>
-      </auth>
-      -->
+
+ <textarea rows="10" cols="30" style="background-color: transparent; color: black; resize: none;">
+    <auth ds-text="Welcome!">
+        <p id="username">Bellie_Coin</p>
+         <li><a href="#" id="register">Registration</a></li> 
+          <li><a href="#" id="login">Login</a></li>
+           </auth>
+</textarea>
+      
     
 
+
+DSSQL QUERY
+
+DSSQL queries is a query in form of commands written as statements and are aggregated into programs that enable users to add, modify, or retrieve data from the database table.
+DSSQL Query is used through Javascript
 
 
 Example of Introduced SQL
@@ -58,6 +71,16 @@ context.executeQuery(addQuery,"SomeoneName",15,"no 12 someone address",(done,err
 });}
 Where the name, age, address are the columns and @number is the value identifier.
 
+
+
+
+
+Advantages of DordStream to devloper and newbie
+
+•	It helps developer to develop web application with Html, Css and Javascript.
+•	It helps Newbie Developer Journey easy.
+• It helps developer that has zero knowledge
+•	It helps developer to perform database operations.
 
 
 
