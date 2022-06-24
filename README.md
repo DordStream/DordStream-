@@ -35,6 +35,8 @@ DordStream has the following features
 
 
 
+
+
 DSHTML TAG
 
 Dshtml tag is a set of custom tag which extend the function of html through the CMS. It is also html-like that is used to perform some tasks within the CMS and displayed, formatted the same as html content on web browser. It has the same syntax as html 
@@ -42,14 +44,12 @@ Dshtml tag is a set of custom tag which extend the function of html through the 
 
 Example of Introduced Dshtml Tag
 
-
- <textarea rows="10" cols="30" style="background-color: transparent; color: black; resize: none;">
-    <auth ds-text="Welcome!">
+    <auth ds-text="Welcome!" >
         <p id="username">Bellie_Coin</p>
          <li><a href="#" id="register">Registration</a></li> 
           <li><a href="#" id="login">Login</a></li>
            </auth>
-</textarea>
+
       
     
 
