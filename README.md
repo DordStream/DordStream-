@@ -80,7 +80,7 @@ Advantages of DordStream to developer and newbie
 
 •	It helps developer to develop web application with Html, Css and Javascript.
 •	It helps Newbie Developer Journey easy.
-• It helps developer that has zero knowledge
+• It helps developer that has zero knowledge on back-end language (PHP, C#, Java e.t.c)
 •	It helps developer to perform database operations.
 
 
