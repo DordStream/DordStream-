@@ -76,7 +76,7 @@ Where the name, age, address are the columns and @number is the value identifier
 
 
 
-Advantages of DordStream to devloper and newbie
+Advantages of DordStream to developer and newbie
 
 •	It helps developer to develop web application with Html, Css and Javascript.
 •	It helps Newbie Developer Journey easy.
