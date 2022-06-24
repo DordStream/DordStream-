@@ -42,7 +42,7 @@ DSHTML TAG
 Dshtml tag is a set of custom tag which extend the function of html through the CMS. It is also html-like that is used to perform some tasks within the CMS and displayed, formatted the same as html content on web browser. It has the same syntax as html 
 
 
-Example of Introduced Dshtml Tag
+Example of Discovery Dshtml Tag
 
     <auth ds-text="Welcome!" >
         <p id="username">Bellie_Coin</p>
@@ -60,7 +60,7 @@ DSSQL queries is a query in form of commands written as statements and are aggre
 DSSQL Query is used through Javascript
 
 
-Example of Introduced SQL
+Example of Discovery DSSQL Query
 
 
 window.onload = function() {
