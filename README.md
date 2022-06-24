@@ -42,6 +42,7 @@ Dshtml tag is a set of custom tag which extend the function of html through the 
 
 Example of Introduced Dshtml Tag
 
+
  <textarea rows="10" cols="30" style="background-color: transparent; color: black; resize: none;">
     <auth ds-text="Welcome!">
         <p id="username">Bellie_Coin</p>
