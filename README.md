@@ -3,7 +3,7 @@ PROJECT TITLE: Development of Content Management System Software(CMS) titled Dor
 DORDSTREAM
 
 Dordstream is a free and open source content management system software written in C# and paired with MSSQL server which:
-(1)	Allow to perform database operation through Javascript.
+(1)	Allow to perform rational database operation through Javascript.
 (2)	Allow to develop blog and website with Html Document.
 (3)	Allow to develop web application.
 
@@ -80,8 +80,8 @@ Advantages of DordStream to developer and newbie
 
 •	It helps developer to develop web application with Html, Css and Javascript.
 •	It helps Newbie Developer Journey easy.
-• It helps developer that has zero knowledge on back-end language (PHP, C#, Java e.t.c)
-•	It helps developer to perform database operations.
+•       It helps developer that has zero knowledge on back-end language (PHP, C#, Java e.t.c)
+•	It helps developer to perform rational database operations without the knowledge of MYSQL or MSSQL e.t.c.
 
 
 
@@ -92,7 +92,7 @@ Security
 
 •	IPAddress Verification
 •	Role Based
-• Cross Site Script (XSS)
+•       Cross Site Script (XSS)
 •	SQL Injection
 
 
