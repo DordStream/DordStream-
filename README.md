@@ -118,7 +118,8 @@ References
 •	Microsoft Cooperation
 •	Agility Html Pack
 
-
+The demo was hosted on free server where SMTP server is not installed. Email service won't work.
+Demo : http://dordstream-001-site1.etempurl.com/admin
 Admin Login Details
 
 •	Username: DordStream
@@ -135,3 +136,9 @@ Released Date: July 1 2022
 
 Download the zip code and read the full tutorial from DordStream.pdf 
 Watch the tutorial on Youtube via our channel http://www.youtube.com/channel/UCpp87MTauAmcEx8M3MvNwqQ
+
+Contact details
+
+WhatsApp: https://wa.me/message/OWVXK2IC34Y4E1
+Mobile Number: +2347013943034
+Facebook: https://www.facebook.com/profile.php?id=100003468655180
