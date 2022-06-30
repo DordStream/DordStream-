@@ -140,5 +140,7 @@ Watch the tutorial on Youtube via our channel http://www.youtube.com/channel/UCp
 Contact details
 
 WhatsApp: https://wa.me/message/OWVXK2IC34Y4E1
+
 Mobile Number: +2347013943034
+
 Facebook: https://www.facebook.com/profile.php?id=100003468655180
