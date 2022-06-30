@@ -1,15 +1,21 @@
-PROJECT TITLE: Development of Content Management System Software(CMS) titled DordStream, Discovery Of DSSQL Query and Discovery of DSHtml Tag
+PROJECT TITLE: DordStream
+DordStream is a software that helps web developers to develop a web application without back-end. 
+Thus, three methods are approached
+(1) Discovery of Html-like tags named DSHTML
+(2) Discovery of SQl Query through Javascript named DSSQL Query
+(3) Development of Content Management System  named DordStream CMS
 
-DORDSTREAM
 
-Dordstream is a free and open source content management system software written in C# and paired with MSSQL server which:
-(1)	Allow to perform rational database operation through Javascript.
+DORDSTREAM CMS
+
+Dordstream CMS is a free and open source content management system software written in C# and paired with MSSQL server which:
+(1)	Allow to perform relational database operation through Javascript.
 (2)	Allow to develop blog and website with Html Document.
 (3)	Allow to develop web application.
 
-DordStream is a Template based CMS software I.e. The website or blog or web software has to be developed in template design structure and installed for usage.
+DordStream CMS is a Template based CMS software I.e. The website or blog or web software has to be developed in template design structure and installed for usage.
 
-DordStream has the following features
+DordStream CMS has the following features
 1.	It allows multi user website or web application or blog.
 2.	It is template-based.
 3.	It allows adding and removing of widget.
