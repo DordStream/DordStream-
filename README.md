@@ -119,7 +119,9 @@ References
 •	Agility Html Pack
 
 The demo was hosted on free server where SMTP server is not installed. Email service won't work.
+
 Demo : http://dordstream-001-site1.etempurl.com/admin
+
 Admin Login Details
 
 •	Username: DordStream
