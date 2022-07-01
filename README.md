@@ -1,23 +1,107 @@
 PROJECT TITLE: DordStream
 
 
-DordStream is a software that helps web developers to develop a web application without back-end. 
+Aim and goal of Dordstream are to help web developers to develop a web application without back-end. 
+
+
+What is back-end: back-end refer to server-side of an application and everything that communicate with between the database and the browser. Reference by Course Report.
+
+Problem facing when learning back-end language
+
+(1)	Time Taking.
+
+(2)	Difficulty in writing a logic.
+
+(3)	Security Handling.
+
+
 Thus, three methods are approached
+
 (1) Discovery of Html-like tags named DSHTML
+
 (2) Discovery of SQl Query through Javascript named DSSQL Query
+
 (3) Development of Content Management System  named DordStream CMS
+
+
+
+
+(1) Discovery of Html-like tags named DSHTML TAG
+
+Dshtml tag is a set of custom tag which extend the function of html through the CMS. 
+It's Server as backend Template and also html-like that is used to perform some tasks within the CMS and displayed, formatted the same as html content on web browser. It has the same syntax as html 
+
+
+Example of Dshtml Tag
+
+    <auth ds-text="Welcome!" >
+        <p id="username">Bellie_Coin</p>
+         <li><a href="#" id="register">Registration</a></li> 
+          <li><a href="#" id="login">Login</a></li>
+           </auth>
+
+
+      
+
+
+
+(2) Discovery SQL Query Through Javascript named DSSQL QUERY
+
+What is Structured Query Language (SQL): SQL Query is a query in form of commands written as statements and are aggregated into programs that enable users to add , modify or retrieve data from the database table with the aid of Database Management System Software.
+DordStream Developed Database Management System software  on MSSQL through javascript.
+
+Poblems facing Database
+
+(1) Sql Injection Attack
+
+(2) Modification of Database outside the application
+
+
+Problems Solved by DSSQL Query
+
+(1) Its disallow Sql Injection Attack
+
+(2) Its disallow Modification of Database outside the Application
+
+(3) Its Restrict Who can run the Query.
+
+
+
+Example of DSSQL Query
+
+
+window.onload = function() {
+
+let dbConnection= new DbConnection();
+
+let context = dbConnection.context;
+
+dbConnection.open(function() {
+
+let addQuery="add Name=@1, Age=@2, Address=@3 into Student";
+
+context.executeQuery(addQuery,"SomeoneName",15,"no 12 someone address",(done,error)=>{ alert(error); });
+
+});}
+
+Where the name, age, address are the columns and @number is the value identifier.
+
 
 
 DORDSTREAM CMS
 
 Dordstream CMS is a free and open source content management system software written in C# and paired with MSSQL server which:
 (1)	Allow to perform relational database operation through Javascript.
+
 (2)	Allow to develop blog and website with Html Document.
+
 (3)	Allow to develop web application.
 
 DordStream CMS is a Template based CMS software I.e. The website or blog or web software has to be developed in template design structure and installed for usage.
 
+
 DordStream CMS has the following features
+
 1.	It allows multi user website or web application or blog.
 2.	It is template-based.
 3.	It allows adding and removing of widget.
@@ -45,50 +129,15 @@ DordStream CMS has the following features
 
 
 
-DSHTML TAG
-
-Dshtml tag is a set of custom tag which extend the function of html through the CMS. It is also html-like that is used to perform some tasks within the CMS and displayed, formatted the same as html content on web browser. It has the same syntax as html 
-
-
-Example of Discovery Dshtml Tag
-
-    <auth ds-text="Welcome!" >
-        <p id="username">Bellie_Coin</p>
-         <li><a href="#" id="register">Registration</a></li> 
-          <li><a href="#" id="login">Login</a></li>
-           </auth>
-
-      
-    
-
-
-DSSQL QUERY
-
-DSSQL queries is a query in form of commands written as statements and are aggregated into programs that enable users to add, modify, or retrieve data from the database table.
-DSSQL Query is used through Javascript
-
-
-Example of Discovery DSSQL Query
-
-
-window.onload = function() {
-let dbConnection= new DbConnection();
-let context = dbConnection.context;
-dbConnection.open(function() {
-let addQuery="add Name=@1, Age=@2, Address=@3 into Student";
-context.executeQuery(addQuery,"SomeoneName",15,"no 12 someone address",(done,error)=>{ alert(error); });
-});}
-Where the name, age, address are the columns and @number is the value identifier.
-
-
-
-
 
 Advantages of DordStream to developer and newbie
 
-•	It helps developer to develop web application with Html, Css and Javascript.
+•	It helps web developer to develop web application with Html, Css and Javascript.
+
 •	It helps Newbie Developer Journey easy.
-•       It helps developer that has zero knowledge on back-end language (PHP, C#, Java e.t.c)
+
+•   It helps developer that has zero knowledge on back-end language (PHP, C#, Java e.t.c).
+
 •	It helps developer to perform rational database operations without the knowledge of MYSQL or MSSQL e.t.c.
 
 
@@ -99,8 +148,11 @@ Advantages of DordStream to developer and newbie
 Security
 
 •	IPAddress Verification
+
 •	Role Based
-•       Cross Site Script (XSS)
+
+•   Cross Site Script (XSS)
+
 •	SQL Injection
 
 
@@ -115,8 +167,11 @@ Security
 
 References
 •	Froala Editor
+
 •	Microsoft Cooperation
+
 •	Agility Html Pack
+
 
 The demo was hosted on free server where SMTP server is not installed. Email service won't work.
 
@@ -125,9 +180,11 @@ Demo : http://dordstream-001-site1.etempurl.com/admin
 Admin Login Details
 
 •	Username: DordStream
+
 •	Password: Admin32@
  
- Note: You are advise to add your credentials and delete the old credential
+
+ Note: You are advise to add your credentials and delete the old credential for production purpose not for Demo.
 
 
 Released Version: Version 1.1
@@ -137,7 +194,10 @@ Released Date: July 1 2022
 
 
 Download the zip code and read the full tutorial from DordStream.pdf 
+
+
 Watch the tutorial on Youtube via our channel http://www.youtube.com/channel/UCpp87MTauAmcEx8M3MvNwqQ
+
 
 Contact details
 
