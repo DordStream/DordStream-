@@ -1,49 +1,77 @@
 @{ Layout=""; 
   var returnUrl = Context.Request.Query["returnurl"];}
-
-<!DOCTYPE HTML>
-<html>
+@model BloggerDotCore.Models.Login
+<!DOCTYPE html>
+<html lang="en" class="overflow-auto">
 <head>
-<title>Modern an Admin Panel Category Flat Bootstarp Resposive Website Template | Login :: w3layouts</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design">
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
- <!-- Bootstrap Core CSS -->
-<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css'>
-<!-- Custom CSS -->
-<link href="Admincss/style.css" rel='stylesheet' type='text/css'>
-<link href="Admincss/font-awesome.css" rel="stylesheet"> 
-<!-- jQuery -->
-<script src="js/jquery.min.js"></script>
-<!----webfonts--->
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
-<!---//webfonts--->  
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Bcwebton Technologies">
+    <link rel="shortcut icon" href="~/favicon.ico">
+    <title>Login - DordStream</title>
+
+    <link rel="stylesheet" href="/adminwwwroot/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/adminwwwroot/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="/adminwwwroot/css/accountSytle.css">
 </head>
-<body id="login">
-  <div class="login-logo">
-    <a href="/account/login"><img src="images/logo.png" alt=""></a>
-  </div>
-  <h2 class="form-heading">login</h2>
-  <div class="app-cam">
-	  <form ds-action="login" asp-antiforgery="false" asp-route="Login" asp-route-returnurl="@returnUrl">
-<div asp-validation-summary="All" style="color:red; margin-top: 10px"> </div>
-		<input type="text" class="text" placeholder="Username" ds-username="1" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';}">
-		<input type="password" ds-password="1" onfocus="this.value = '';" placeholder="Password" onblur="if (this.value == '') {this.value = 'Password';}">
-		<div class="submit"><input type="submit" value="Login"></div>
-			<ul class="new">
-			<li class="new_left"><p><a href="#" ds-link-type="forget">Forgot Password ?</a></p></li>
-			<li class="new_right"><p class="sign">New here ?<a href="#" ds-link-type="register"> Sign Up</a></p></li>
-			<div class="clearfix"></div>
-		</ul>
-	</form>
-  </div>
-   <div class="copy_layout login">
-      <p>Copyright &copy; 2015  <sitename>Modern</sitename>. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
-   </div>
+<body id="body">
+    <div class="container bg-transparent pt-3 mb-4">
+        <div class="card mr-auto shadow-lg login-card">
+            <div class="card-header border-bottom pb-2 bg-transparent">
+                <h3 class="card-title text-center">Login Page</h3>
+            </div>
+            <div class="card-body mt-2 border-0">
+                <form method="post" asp-route="Login" asp-route-returnurl="@returnUrl" asp-antiforgery="false">
+                    <div asp-validation-summary="All" class="form-group mb-2 text-danger">
+
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label-lg">UserName</label>
+                        <input type="text" class="form-control" placeholder="Username" asp-for="UserName">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label-lg">Password</label>
+                        <input type="password" class="form-control" placeholder="Password" asp-for="Password">
+                    </div>
+                    <div class="input-group align-items-baseline">
+                        <input type="checkbox" class="form-check" id="showPassword">
+                        <label class="col-form-label-sm ml-3">Show Password</label>
+                    </div>
+                    <div class="form-group mt-1">
+                        <a asp-controller="Account" asp-action="ResetPassword" class="nav-link">Forget Password</a>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <button type="submit" class="btn btn-primary text-center">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/adminwwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/adminwwwroot/font-awesome/js/all.min.js"></script>
+    <script src="/adminwwwroot/lib/jquery/dist/jquery.min.js"></script>
+    <script>
+        window.onload = function () {
+
+            var body = document.getElementById("body");
+            body.style.height = $(window).height() + "px";
+            var password = document.getElementById("Password");
+            var showPassword = document.getElementById("showPassword");
+            showPassword.onclick = function () {
+                if (password.type == "text") {
+                    password.type = "password";
+                }
+                else {
+                    password.type = "text";
+                }
+            }
+        }
+    </script>
 </body>
 </html>
 
