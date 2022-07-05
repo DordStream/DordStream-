@@ -1,0 +1,56 @@
+
+<div class="col-md-12 graphs">
+    <div class="xs">
+     <h3>Faculty</h3>
+     
+    <div style="display: flex; margin-bottom: 15px; justify-content: space-between; align-items: center;">
+        <input type="text" class="form-control w-50 mb-5" id="facultyName" placeholder="Faculty" style="width: 70%">
+        <button class="btn btn-outline-success" style="margin-right: 20px; padding: 10px; border: 1px solid green; border-radius: 10px;" id="createFaculty">Create Faculty</button>
+    </div>
+    <p class="text-danger" id="error"></p>
+   <div class="bs-example4" data-example-id="contextual-table">
+ <table class="table">
+   <thead>
+     <tr>
+       <th>S/N</th>
+       <th>Name</th>
+       <th>Registration Date</th>
+     </tr>
+   </thead>
+   <tbody id="FacultyTable">
+    
+     
+   </tbody>
+ </table>
+</div>
+<!-- popup for sign up form -->
+<div class="modal video-modal fade" id="facultyModal" tabindex="-1" role="dialog" aria-labelledby="myModal2">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content  modal-body">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h3>Are you sure to delete the faculty</h3>
+				<p class="text-danger" id="modalError"></p>
+        <div class="d-block">
+                  
+                        <div class="d-flex">
+                          
+                            <button type="button" id="delete" class="btn btn-outline-success">Delete</button>
+                            <button type="button" id="cancel" class="btn btn-outline-danger" data-dismiss="modal">Cancel</button>
+                        </div>
+					</div>
+			
+		</div>
+	</div>
+</div>
+<!-- //popup for sign up form -->
+
+</div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+<!-- bootstrap js file -->
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+<!-- bootstrap js file -->
+<script src="js/faculty.js"></script>
