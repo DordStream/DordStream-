@@ -34,7 +34,7 @@ let customPageRole = document.getElementById("customPageRole");
 let dordPageRole = document.getElementById("dordPageRole");
 let enableIpAddress = document.getElementById("enableIpVerification");
 let connectionString = document.getElementById("connectionString");
-
+let secretKey = document.getElementById("SecretKey");
 let settingService = {
      
     addTitle: function () {
@@ -124,6 +124,9 @@ let settingService = {
     },
     addConnectionString: function () {
         connection.invoke("AddConnectionString", connectionString.value);
+    },
+    addSecretKey: function () {
+        connection.invoke("AddSecretKey", secretKey.value);
     }
 
 };
@@ -230,8 +233,9 @@ connection.on("descriptionAdded", function (isDone) {
    
 });
 connection.on("maxPostAdded", function (isDone) {
+    $(".spinner").css("display", "none");
     if (isDone) {
-        $(".spinner").css("display", "none");
+       
         $("#maxpostText").text($("#MaxCount").val());
         $("#maxpostModal").modal("hide");
     }
@@ -360,6 +364,7 @@ connection.on("TableRoleChange", function (isDone) {
     }
 });
 connection.on("ResendCode", function (error) {
+    $(".spinner").css("display", "none");
     if (error == '') {
         alert("Email Confirmation Code Has been Sent");
     }
@@ -380,6 +385,16 @@ connection.on("ConnectionStringAdded", function (isDone,error) {
     connectionString.value = '';
    
 
+});
+connection.on("SecreteKeyAdd", function (result) {
+
+    if (result) {
+        $("#secretError").text("Secret Key Successfully Saved");
+    } else {
+        $("#secretError").text("Error occur while saving the secret key please check your connectivity and retry");
+    }
+    $(".spinner").css("display", "none");
+    secretKey.value = '';
 });
 window.onload = function () {
     var password = document.getElementById("userpassword");
@@ -532,6 +547,12 @@ connection.start().then(function () {
             $(".spinner").css("display", "block");
 
             settingService.addConnectionString();
+            e.preventDefault();
+        });
+        $("#saveSecretKeyBtn").on("click", function (e) {
+            $(".spinner").css("display", "block");
+
+            settingService.addSecretKey();
             e.preventDefault();
         });
     }

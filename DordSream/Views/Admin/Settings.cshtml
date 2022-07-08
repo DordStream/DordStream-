@@ -80,222 +80,233 @@
         </div>
     </div>
     <!--End-->
-
-    <div class="clearfix"></div>
-    <!--Site Configration-->
+    <!--Payment Gateway-->
     <div class="container mt-4 border-bottom">
-        <h4 class="settings-header">Site Configuration</h4>
-
+        <h4 class="settings-header">Payment Gateway</h4>
         <div class="settings-text">
-            <h6>Connectring String</h6>
-            <p data-toggle="modal" data-target="#connectionStringModal" class="small">Database Connection String</p>
+            <h6>Secret Key</h6>
+            <p class="small" data-toggle="modal" data-target="#secretKeyModal">**********</p>
         </div>
-
-        <div class="settings-text">
-
-            <div class="input-group">
-                <p class="small">Enable watermark</p>
-                <div class="custom-control custom-switch ml-auto">
-
-                    <input type="checkbox" class="custom-control-input" id="enablewatermark" asp-for="WaterMarkEnable">
-                    <label class="custom-control-label" for="enablewatermark"></label>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="settings-text">
-
-            <div class="input-group">
-                <p class="small">Allow Anonymous User</p>
-                <div class="custom-control custom-switch ml-auto">
-
-                    <input type="checkbox" class="custom-control-input" id="allowanonymous" asp-for="AllowAnonymous">
-                    <label class="custom-control-label" for="allowanonymous"></label>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="settings-text">
-
-            <div class="input-group">
-                <p class="small">Enable Cache</p>
-                <div class="custom-control custom-switch ml-auto">
-
-                    <input type="checkbox" class="custom-control-input" id="enablecache" asp-for="EnableCache">
-                    <label class="custom-control-label" for="enablecache"></label>
-
-                </div>
-            </div>
-        </div>
-
-
-        <div class="settings-text">
-
-            <div class="input-group">
-                <p class="small">Enable Ip Address Verification </p>
-                <div class="custom-control custom-switch ml-auto">
-
-                    <input type="checkbox" class="custom-control-input" id="enableIpVerification" asp-for="EnableIpVerification">
-                    <label class="custom-control-label" for="enableIpVerification"></label>
-
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="settings-text">
-
-            <div class="d-block">
-                <p class="small">Select Custom Page Role</p>
-                <div class="form-group">
-
-                    <select type="checkbox" class="form-control w-25" id="customPageRole" asp-for="CustomPageRole">
-                        <option value="All">All</option>
-                        <option value="User">User</option>
-                        <option value="Admin">Admin</option>
-                        <option value="Author">Author</option>
-                        <option value="AdminAuthor">Admin&Author</option>
-                    </select>
-
-                </div>
-            </div>
-        </div>
-        <div class="settings-text">
-
-            <div class="d-block">
-                <p class="small">Select Dord Page Role</p>
-                <div class="form-group">
-
-                    <select type="checkbox" class="form-control w-25" id="dordPageRole" asp-for="DordPageRole">
-                        <option value="All">All</option>
-                        <option value="User">User</option>
-                        <option value="Admin">Admin</option>
-                        <option value="Author">Author</option>
-                        <option value="AdminAuthor">Admin&Author</option>
-                    </select>
-
-                </div>
-            </div>
-        </div>
-        <div class="settings-text">
-
-            <div class="d-block">
-                <p class="small">Select View Table Role</p>
-                <div class="form-group">
-
-                    <select type="checkbox" class="form-control w-25" id="viewTableRole" asp-for="ViewTableRole">
-                        <option value="All">All</option>
-                        <option value="User">User</option>
-                        <option value="Admin">Admin</option>
-                        <option value="Author">Author</option>
-                        <option value="AdminAuthor">Admin&Author</option>
-                    </select>
-
-                </div>
-            </div>
-        </div>
-        <div class="settings-text">
-
-            <div class="d-block">
-                <p class="small">Select Modify Table Role</p>
-                <div class="form-group">
-
-                    <select type="checkbox" class="form-control w-25" id="modifyTableRole" asp-for="ModifyTableRole">
-                        <option value="All">All</option>
-                        <option value="User">User</option>
-                        <option value="Admin">Admin</option>
-                        <option value="Author">Author</option>
-                        <option value="AdminAuthor">Admin&Author</option>
-                    </select>
-
-                </div>
-            </div>
-        </div>
-
     </div>
-    <!--End-->
-    <div class="clearfix"></div>
-    <!--Email-->
-    <div class="container mt-4 border-bottom">
-        <h4 class="settings-header">Email</h4>
-        <div class="settings-text">
-            <div class="input-group">
-                <p class="small">Enable free email setup</p>
-                <div class="custom-control custom-switch ml-auto">
 
-                    <input type="checkbox" class="custom-control-input" id="enableFreeMail" asp-for="Enable_Free_Mail_Setup">
-                    <label class="custom-control-label" for="enableFreeMail"></label>
-
-                </div>
-
-            </div>
-            <div class="form-group mt-4" id="setupContainer">
-
-            </div>
-        </div>
-        <div class="settings-text">
-            <h6>Username</h6>
-            <p class="small" data-toggle="modal" data-target="#usernameModal" id="usernameText">@Model?.SmtpSetup.UserName</p>
-        </div>
-        <div class="settings-text">
-            <h6>Password</h6>
-            <p class="small" data-toggle="modal" data-target="#passwordModal">**********</p>
-        </div>
-
-        <div id="hostedsetup">
-            <h4 class="settings-header">Smtp Setup</h4>
-            <div class="settings-text">
-                <h6>SmtpHost</h6>
-                <p class="small" data-toggle="modal" data-target="#smtphostModal" id="smtpHostText">@Model?.SmtpSetup.Host</p>
-            </div>
-            <div class="settings-text">
-                <h6>SmtpPort</h6>
-                <p class="small" data-toggle="modal" data-target="#smtpportModal" id="smtpPortText">@Model?.SmtpSetup.Port</p>
-            </div>
-            <div class="settings-text">
-                <h6>Smtp SSL</h6>
-                <div class="input-group">
-                    <p class="small">Require Smtp SSL</p>
-                    <div class="custom-control custom-switch ml-auto">
-
-                        <input type="checkbox" class="custom-control-input" asp-for="SmtpSetup.IsSSL">
-                        <label class="custom-control-label" for="SmtpSetup_IsSSL"></label>
-
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-            <h4 class="settings-header mt-2">Imap Setup</h4>
-            <div class="settings-text">
-                <h6>ImapHost</h6>
-                <p class="small" data-toggle="modal" data-target="#imaphostModal" id="imapHostText">@Model?.ImapSetup.Host</p>
-            </div>
-            <div class="settings-text">
-                <h6>ImapPort</h6>
-                <p class="small" data-toggle="modal" data-target="#imapportModal" id="imapPortText">@Model?.ImapSetup.Port</p>
-            </div>
-            <div class="settings-text">
-                <h6>Imap SSL</h6>
-                <div class="input-group">
-                    <p class="small">Require Imap SSL</p>
-                    <div class="custom-control custom-switch ml-auto">
-
-                        <input type="checkbox" class="custom-control-input" asp-for="ImapSetup.IsSSL">
-                        <label class="custom-control-label" for="ImapSetup_IsSSL"></label>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+<!--End-->
 
 
+
+<div class="clearfix"></div>
+<!--Site Configration-->
+<div class="container mt-4 border-bottom">
+    <h4 class="settings-header">Site Configuration</h4>
+
+    <div class="settings-text">
+        <h6>Connectring String</h6>
+        <p data-toggle="modal" data-target="#connectionStringModal" class="small">Database Connection String</p>
     </div>
-    <!--End-->
+
+    <div class="settings-text">
+
+        <div class="input-group">
+            <p class="small">Enable watermark</p>
+            <div class="custom-control custom-switch ml-auto">
+
+                <input type="checkbox" class="custom-control-input" id="enablewatermark" asp-for="WaterMarkEnable">
+                <label class="custom-control-label" for="enablewatermark"></label>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="settings-text">
+
+        <div class="input-group">
+            <p class="small">Allow Anonymous User</p>
+            <div class="custom-control custom-switch ml-auto">
+
+                <input type="checkbox" class="custom-control-input" id="allowanonymous" asp-for="AllowAnonymous">
+                <label class="custom-control-label" for="allowanonymous"></label>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="settings-text">
+
+        <div class="input-group">
+            <p class="small">Enable Cache</p>
+            <div class="custom-control custom-switch ml-auto">
+
+                <input type="checkbox" class="custom-control-input" id="enablecache" asp-for="EnableCache">
+                <label class="custom-control-label" for="enablecache"></label>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="settings-text">
+
+        <div class="input-group">
+            <p class="small">Enable Ip Address Verification </p>
+            <div class="custom-control custom-switch ml-auto">
+
+                <input type="checkbox" class="custom-control-input" id="enableIpVerification" asp-for="EnableIpVerification">
+                <label class="custom-control-label" for="enableIpVerification"></label>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="settings-text">
+
+        <div class="d-block">
+            <p class="small">Select Custom Page Role</p>
+            <div class="form-group">
+
+                <select type="checkbox" class="form-control w-25" id="customPageRole" asp-for="CustomPageRole">
+                    <option value="All">All</option>
+                    <option value="User">User</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Author">Author</option>
+                    <option value="AdminAuthor">Admin&Author</option>
+                </select>
+
+            </div>
+        </div>
+    </div>
+    <div class="settings-text">
+
+        <div class="d-block">
+            <p class="small">Select Dord Page Role</p>
+            <div class="form-group">
+
+                <select type="checkbox" class="form-control w-25" id="dordPageRole" asp-for="DordPageRole">
+                    <option value="All">All</option>
+                    <option value="User">User</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Author">Author</option>
+                    <option value="AdminAuthor">Admin&Author</option>
+                </select>
+
+            </div>
+        </div>
+    </div>
+    <div class="settings-text">
+
+        <div class="d-block">
+            <p class="small">Select View Table Role</p>
+            <div class="form-group">
+
+                <select type="checkbox" class="form-control w-25" id="viewTableRole" asp-for="ViewTableRole">
+                    <option value="All">All</option>
+                    <option value="User">User</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Author">Author</option>
+                    <option value="AdminAuthor">Admin&Author</option>
+                </select>
+
+            </div>
+        </div>
+    </div>
+    <div class="settings-text">
+
+        <div class="d-block">
+            <p class="small">Select Modify Table Role</p>
+            <div class="form-group">
+
+                <select type="checkbox" class="form-control w-25" id="modifyTableRole" asp-for="ModifyTableRole">
+                    <option value="All">All</option>
+                    <option value="User">User</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Author">Author</option>
+                    <option value="AdminAuthor">Admin&Author</option>
+                </select>
+
+            </div>
+        </div>
+    </div>
 
 </div>
+<!--End-->
+<div class="clearfix"></div>
+<!--Email-->
+<div class="container mt-4 border-bottom">
+    <h4 class="settings-header">Email</h4>
+    <div class="settings-text">
+        <div class="input-group">
+            <p class="small">Enable free email setup</p>
+            <div class="custom-control custom-switch ml-auto">
+
+                <input type="checkbox" class="custom-control-input" id="enableFreeMail" asp-for="Enable_Free_Mail_Setup">
+                <label class="custom-control-label" for="enableFreeMail"></label>
+
+            </div>
+
+        </div>
+        <div class="form-group mt-4" id="setupContainer">
+
+        </div>
+    </div>
+    <div class="settings-text">
+        <h6>Username</h6>
+        <p class="small" data-toggle="modal" data-target="#usernameModal" id="usernameText">@Model?.SmtpSetup.UserName</p>
+    </div>
+    <div class="settings-text">
+        <h6>Password</h6>
+        <p class="small" data-toggle="modal" data-target="#passwordModal">**********</p>
+    </div>
+
+    <div id="hostedsetup">
+        <h4 class="settings-header">Smtp Setup</h4>
+        <div class="settings-text">
+            <h6>SmtpHost</h6>
+            <p class="small" data-toggle="modal" data-target="#smtphostModal" id="smtpHostText">@Model?.SmtpSetup.Host</p>
+        </div>
+        <div class="settings-text">
+            <h6>SmtpPort</h6>
+            <p class="small" data-toggle="modal" data-target="#smtpportModal" id="smtpPortText">@Model?.SmtpSetup.Port</p>
+        </div>
+        <div class="settings-text">
+            <h6>Smtp SSL</h6>
+            <div class="input-group">
+                <p class="small">Require Smtp SSL</p>
+                <div class="custom-control custom-switch ml-auto">
+
+                    <input type="checkbox" class="custom-control-input" asp-for="SmtpSetup.IsSSL">
+                    <label class="custom-control-label" for="SmtpSetup_IsSSL"></label>
+
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <h4 class="settings-header mt-2">Imap Setup</h4>
+        <div class="settings-text">
+            <h6>ImapHost</h6>
+            <p class="small" data-toggle="modal" data-target="#imaphostModal" id="imapHostText">@Model?.ImapSetup.Host</p>
+        </div>
+        <div class="settings-text">
+            <h6>ImapPort</h6>
+            <p class="small" data-toggle="modal" data-target="#imapportModal" id="imapPortText">@Model?.ImapSetup.Port</p>
+        </div>
+        <div class="settings-text">
+            <h6>Imap SSL</h6>
+            <div class="input-group">
+                <p class="small">Require Imap SSL</p>
+                <div class="custom-control custom-switch ml-auto">
+
+                    <input type="checkbox" class="custom-control-input" asp-for="ImapSetup.IsSSL">
+                    <label class="custom-control-label" for="ImapSetup_IsSSL"></label>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!--End-->
+    </div>
 <!--Blog Title-->
 <div class="modal" id="titleModal">
     <div class="modal-dialog modal-dialog-centered modal-sm">
@@ -442,7 +453,7 @@
     <div class="modal-dialog modal-dialog-centered modal-sm">
         <div class="modal-content">
             <div class="modal-body">
-                <input type="text" placeholder="Password" class="form-control borderless border-bottom mb-4 mt-3" asp-for="SmtpSetup.Password" />
+                <input type="password" placeholder="Password" class="form-control borderless border-bottom mb-4 mt-3" asp-for="SmtpSetup.Password" />
                 <div class="input-group justify-content-end mt-5">
                     <a href="#" class="btn btn-outline-danger mr-5" data-dismiss="modal">Cancel</a>
                     <button type="button" class="btn btn-outline-success" id="savePasswordBtn">Save</button>
@@ -558,11 +569,27 @@
     <div class="modal-dialog modal-dialog-centered modal-sm">
         <div class="modal-content">
             <div class="modal-body">
-                <span class="text-danger" id="connectionError"></span>
+                <span class="text-danger" id="connectionError">Connection String must contain MultipleActiveResultSets=true</span>
                 <input type="text" placeholder="Connection String" class="form-control borderless border-bottom mb-4 mt-3" id="connectionString" />
                 <div class="input-group justify-content-end mt-5">
                     <a href="#" class="btn btn-outline-danger mr-5" data-dismiss="modal">Cancel</a>
                     <button type="button" class="btn btn-outline-success" id="connectionStringBtn">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End-->
+<!--Secret Key-->
+<div class="modal" id="secretKeyModal">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p id="secretError" class="text-danger"></p>
+                <input type="password" placeholder="Secret Key" class="form-control borderless border-bottom mb-4 mt-3" asp-for="SecretKey" />
+                <div class="input-group justify-content-end mt-5">
+                    <a href="#" class="btn btn-outline-danger mr-5" data-dismiss="modal">Cancel</a>
+                    <button type="button" class="btn btn-outline-success" id="saveSecretKeyBtn">Save</button>
                 </div>
             </div>
         </div>

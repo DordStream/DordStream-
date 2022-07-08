@@ -1,152 +1,148 @@
-@{ Layout="";}
-<!--html-->
-<!DOCTYPE HTML>
-<html lang="en-US">
-
-<!--head-->
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <meta name="keywords" content="Attenance Sheet">
- <meta name="description" content="Attenance Sheet">
-
-<!--title-->
-<title> Public Attendance</title>
-<!--End title-->
-<!--bootstrap-->
-<link href="css/bootstrap.css" rel="stylesheet">
-<!--End bootstrap-->
-<!--fontawesome-->
-<link href="css/fontawesome.css" rel="stylesheet">
-<!--End fontawesome-->
-<!--site-->
-<link href="css/site.css" rel="stylesheet">
-<!--End site-->
-</head>
-<!--End head-->
-
-
-
-<!--body-->
-<body>
-
-
-
-<!--Main Container-->
-<div class="container border mt-2">
-
-
-<nav class="navbar navbar-expand-sm navbar-light bg-transparent">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand text-success" href="/">Attendance Sheet</a>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
-      <ul class="navbar-nav">
-<li class="nav-item">
-          <a class="nav-link text-dark" href="/dord/viewattendancedord">View Attendance</a>
-        </li>
-
-                <li class="nav-item">
-          <a class="nav-link text-dark" href="/">Sign In</a>
-        </li>
-             
- </ul>
-
+<section class="w3l-index5 w3l-blog1 py-5">
+    <div class="container py-lg-3">
+      <div class="owl-two owl-carousel owl-theme" ds-parent="recent" ds-count="10" ds-title-length="40" ds-content-length="200">
+        <div class="item">
+          <div class="row abouthy-img-grids no-gutters">
+            <div class="col-lg-6 img-one">
+              <a href="#" ds-link="1"><img src="assets/images/img10.jpg" ds-image="1" alt=" " class="img-fluid"></a>
+            </div>
+            <a href="#" ds-link1="1" class="col-lg-6 blog-article-posts bg-color-one">
+              <div class="blog-post d-flex flex-wrap align-content-between p-md-5">
+                <div class="post-content">
+                  <ul class="author-date mb-4 d-flex align-items-center">
+                    <li class="circle avatar"><img src="assets/images/author1.jpg" alt=""></li>
+                    <li>by <b ds-author="1">John Michele</b></li>
+                    <li><span class="fa fa-clock-o" aria-hidden="true"></span> <span ds-date="1">Mar 16, 2021</span></li>
+                  </ul>
+                  <h4 class="blog_post_title mb-4" ds-title="1">That’s what I want to show you how to do here.</h4>
+                 
+                  <p class="mt-4" ds-content="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, consectetur.....</p>
+                </div>
+                <div class="read-button mt-5">Read story <span class="fa fa-long-arrow-right" aria-hidden="true"></span></div>
+              </div>
+            </a>
+          </div>
+        </div>
+       
+      </div>
+  
+  
+  
     </div>
-  </div>
-</nav>
-<h5 class="text-center mt-3 mb-3" style="text-transform:uppercase"> Welcome to Public Attendance Sheet  Custom</h5>
-
-
-<div class="card border mb-3 m-auto mt-5" style="max-width: 30rem;">
-  <div class="card-body text-success">
+  </section>
+  <!-- /w3l-content-grids-->
+  <section class="w3l-index5 w3l-blog2 py-5">
+    <div class="container py-lg-3">
+      <div class="row abouthy-img-grids" ds-parent="feature" ds-count="20" ds-title-length="30" ds-content-length="40">
+        <div class="col-lg-4 col-md-6 blog2-posts">
+          <a href="#" ds-link="1" class="blog-article-post d-block p-0">
+            <div class="blog-post d-flex flex-wrap align-content-between p-4">
+              <img src="assets/images/img7.jpg" ds-image="1" alt=" " class="img-fluid mb-4">
+              <div class="post-content">
+                <ul class="author-date mb-4 d-flex align-items-center">
+                  <li class="circle avatar"><img src="assets/images/author4.jpg" alt=""></li>
+                  <li>by <b ds-author="1">John Michele</b></li>
+                  <li><span class="fa fa-clock-o" aria-hidden="true"></span><span ds-date="1">Mar 16, 2021</span></li>
+                </ul>
+                <h4 class="blog_post_title" ds-title="1">That’s what I want to show you how to do here.</h4>
+                <p class="mt-3" ds-content="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, consectetur.....</p>
+              </div>
+              <div class="read-button mt-5">Read story <span class="fa fa-long-arrow-right" aria-hidden="true"></span></div>
+            </div>
+          </a>
+        </div>
     
 
-<form action="#" method="GET" onsubmit="signOutAttendance(this); return false;" asp-antiforgery="false">
+      </div>
+  
+  
+  
+    </div>
+  </section>
+  <!-- /w3l-content-grids-->
 
-<p id="ds_Error" class="text-danger"></p>
 
 
 
-<div class="form-group mt-2">
-
-<input type="text" class="form-control w-75" name="RegistrationNumber" placeholder="Registration Number" id="registrationNumber" required="">
-
-</div>
-
- <div class="form-group">
-
-              <input type="hidden" class="form-control" name="Condition" value="and">
-
+<!-- our products -->
+<section class="w3l-products py-5" id="projects">
+    <div class="container py-lg-3">
+      <div class="header-section text-center mb-5">
+        <h3>Featured News </h3>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <!--Horizontal Tab-->
+          <div id="parentHorizontalTab">
+            <ul class="resp-tabs-list hor_1">
+              <li>Newest</li>
+              <li>Popular</li>
+              <li>Trendy</li>
+              <div class="clear"></div>
+            </ul>
+            <div class="resp-tabs-container hor_1">
+              <div class="products-content">
+                <div class="row" ds-parent="recent" ds-count="6" ds-title-length="19" ds-content-length="25">
+                  <a href="#" ds-link="1" class="col-lg-4 bg-color-three mt-lg-0 mt-0 mb-3">
+                    <div class="blog-article-post d-flex flex-wrap align-content-between">
+                      <div class="post-content">
+                        <h6 class="sub-title" ds-date="1">Mar 16, 2021</h6>
+                        <img src="assets/images/img10.jpg" ds-image="1" alt=" " class="img-fluid">
+                        <h4 class="blog_post_title my-2" ds-title="1">Featured Blog Post</h4>
+                        <ul class="author-date mb-3 d-flex align-items-center">
+                          <li>by <b ds-author="1">Gwen Johnson</b></li>
+                        </ul>
+                        <p ds-content="1">Lorem ipsum dolor sit amet consectetur adipisicing elit....</p>
+                      </div>
+                      <div class="read-button mt-5">Read story <span class="fa fa-long-arrow-right" aria-hidden="true"></span></div>
+                    </div>
+                  </a>
+                 
+                
+                </div>
+              </div>
+              <div class="products-content">
+                <div class="row" ds-parent="popular" ds-count="6" ds-title-length="19" ds-content-length="25">
+                    <a href="#" ds-link="1" class="col-lg-4 bg-color-three mt-lg-0 mt-0 mb-3">
+                        <div class="blog-article-post d-flex flex-wrap align-content-between">
+                          <div class="post-content">
+                            <h6 class="sub-title" ds-date="1">Mar 16, 2021</h6>
+                            <img src="assets/images/img10.jpg" ds-image="1" alt=" " class="img-fluid">
+                            <h4 class="blog_post_title my-2" ds-title="1">Popular Blog Post</h4>
+                            <ul class="author-date mb-3 d-flex align-items-center">
+                              <li>by <b ds-author="1">Gwen Johnson</b></li>
+                            </ul>
+                            <p ds-content="1">Lorem ipsum dolor sit amet consectetur adipisicing elit....</p>
+                          </div>
+                          <div class="read-button mt-5">Read story <span class="fa fa-long-arrow-right" aria-hidden="true"></span></div>
+                        </div>
+                      </a>
+                </div>
+              </div>
+              <div class="products-content">
+                <div class="row" ds-parent="trending" ds-count="6" ds-title-length="19" ds-content-length="25">
+                    <a href="#" ds-link="1" class="col-lg-4 bg-color-three mt-lg-0 mt-0 mb-3">
+                        <div class="blog-article-post d-flex flex-wrap align-content-between">
+                          <div class="post-content">
+                            <h6 class="sub-title" ds-date="1">Mar 16, 2021</h6>
+                            <img src="assets/images/img10.jpg" ds-image="1" alt=" " class="img-fluid">
+                            <h4 class="blog_post_title my-2" ds-title="1">Trending Blog Post</h4>
+                            <ul class="author-date mb-3 d-flex align-items-center">
+                              <li>by <b ds-author="1">Gwen Johnson</b></li>
+                            </ul>
+                            <p ds-content="1">Lorem ipsum dolor sit amet consectetur adipisicing elit....</p>
+                          </div>
+                          <div class="read-button mt-5">Read story <span class="fa fa-long-arrow-right" aria-hidden="true"></span></div>
+                        </div>
+                      </a>
+                </div>
+              </div>
+            </div>
           </div>
-          
-
-
-
-<div class="form-group mt-5">
-
-<input type="submit" class="btn btn-outline-success" value="Sign Out">
-
-</div>
-
-</form>
-  </div>
-</div>
-
-
-
-
-</div>
-<!--End  Main Container-->
-
-
-
-
-<input type="hidden" id="page" value="viewAttendance">
-
-<p class="text-center mt-3 text-dark">  Design By Dord Stream</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--jquery-->
-<script src="js/jquery.js"></script>
-<!--End jquery-->
-<!--fontawesome-->
-<script src="js/fontawesome.min.js"></script>
-<!--End fontawesome-->
-<!--bootstrap.bundle-->
-<script src="js/bootstrap.bundle.js"></script>
-<!--End bootstrap.bundle-->
-
-<!--site-->
-<script src="js/attendance.js"></script>
-<!--End site-->
-
-
-
-
-
-</body>
-<!--End body-->
-
-
-
-</html>
-<!--End html-->
-
-
-
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //our products -->
 
 
