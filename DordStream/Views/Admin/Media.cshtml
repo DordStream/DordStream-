@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Posts";
+    Layout = "_AdminLayout";
+}
+@section scripts{
+
+    <script src="/adminwwwroot/js/991ee7af-173d-4203-b2c0-45a48737ab13.js" asp-append-version="true"></script>
+
+
+}
+
+
+<div class="container-fluid shadow-sm border">
+
+    <div class="plus">
+        <a href="/admin/addmedia" title="Create New">
+            <i class="fa fa-plus-circle plus-icon">
+
+            </i>
+        </a>
+    </div>
+
+    <div class="media mb-3 mt-3 justify-content-between">
+
+        <div class="mr-auto">
+            <select class="form-control borderless header-input" id="selectposttype">
+                <option value="Image" id="Image">Image Files</option>
+                <option value="Audio" id="Audio">Audio Files</option>
+                <option value="Video" id="Video">Video Files</option>
+                <option value="File" id="File">Document Files</option>
+
+            </select>
+        </div>
+        <input type="search" class="custom-control borderless border-bottom ml-auto mr-auto header-input" placeholder="File Name" id="mediaSearchName" />
+        <input type="checkbox" class="custom-control custom-checkbox header-checkbox" id="allcheck" />
+
+
+
+    </div>
+    <div id="selectedItem">
+        <div class="media border justify-content-around pt-2 pb-1 mt-2 align-items-baseline">
+            <div class="input-group">
+                <a href="#" class="close mr-2" id="selectedItemIClose">&times;</a>
+                |
+                <p class="ml-2 selected-text" id="selected"></p>
+            </div>
+            <div class="input-group justify-content-end ml-auto">
+                <a href="#" title="Delete" class="mr-3" id="delete_all">
+                    <i class="fa fa-trash text-success"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main right-over-flow" id="main">
+
+    </div>
+
+</div>
+<input type="hidden" id="media" value="media" />

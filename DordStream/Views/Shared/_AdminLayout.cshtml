@@ -1,0 +1,181 @@
+﻿@using DordStream
+@inject DordStream.Configuration.IConfiguration Configuration
+@inject DordStream.IAccountService AccountService
+@{ 
+    UserIdentity UserAccount = await AccountService.GetUserByName(User.Identity.Name);
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title> </title>
+    <link rel="stylesheet" href="/adminwwwroot/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/adminwwwroot/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/adminwwwroot/css/adminstylesheet.css" />
+   
+</head>
+<body>
+    <div class="spinner" style="display: none;">
+        <div class="spinner-border"></div>
+    </div>
+    <div class="container-fluid">
+
+        <div class="navbar-container border">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+                <div class="navbar-top">
+                    <button type="button" class="navbar-toggler shadow-sm  border-0 mr-2"  data-toggle="collapse" data-target=".navbar-collapse" aria-controls="supportedNavbarContent" aria-expanded="false" aria-label="Toggle Navigation">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="/admin" class="navbar-brand text-success" id="sitetitle">
+                        @Configuration[nameof(DordStream.Configuration.Settings.Title)]
+                    </a>
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+
+                        <div class="navbar-user">
+                            <div class="dropdown">
+                                <a href="#" data-toggle="dropdown">
+                                    <img src="@(DordStream.Extension.ImageExtension.ConvertToImageBase64(UserAccount.UserImage))" class="img-thumbnail rounded-circle" title="@(UserAccount.UserName)" />
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="/account/edit/@UserAccount.Id" class="dropdown-item-text">Profile</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="/account/logout" class="dropdown-item-text">Logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    }
+
+                </div>
+
+            </nav>
+
+
+
+            <div class="row pt-3">
+                <div class="col-lg-2 bg-white pt-0 col-md-2  nav-paging navbar-collapse">
+                    <div class="left-container border left-over-flow">
+                        <ul class="navbar-nav m-1 pl-0 pr-0">
+                            <li class="nav-item mt-2">
+                                <a class="nav-link" href="/admin/posts">
+                                    <i class="fa fa-list nav-icon" aria-hidden="true"></i>
+                                    <p>Posts</p>
+                                </a>
+                            <li class="nav-item">
+
+                                <a class="nav-link" href="/admin/pages">
+                                    <i class="fa fa-bookmark nav-icon" aria-hidden="true"></i>
+                                    <p>Pages</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin/messages">
+                                    <i class="fa fa-envelope-open-text nav-icon" aria-hidden="true"></i>
+                                    <p>Messages</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+
+                                <a class="nav-link" href="/admin/comments">
+                                    <i class="fa fa-comment nav-icon" aria-hidden="true"></i>
+                                    <p>Comments</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin/media">
+                                    <i class="fa fa-file-alt nav-icon" aria-hidden="true"></i>
+                                    <p>Media</p>
+                                </a>
+                            </li>
+                            @if (User.IsInRole("Admin"))
+                            {
+
+
+                                <li class="nav-item">
+
+                                    <a class="nav-link" href="/admin/users">
+                                        <i class="fa fa-user nav-icon" aria-hidden="true"></i>
+                                        <p>Users</p>
+                                    </a>
+                                </li>
+
+
+                                <li class="nav-item">
+
+                                    <a class="nav-link" href="/admin/themes">
+                                        <i class="fa fa-laptop-code nav-icon" aria-hidden="true"></i>
+                                        <p>Themes</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+
+                                    <a class="nav-link" href="/admin/template">
+                                        <i class="fa fa-laptop-code nav-icon" aria-hidden="true"></i>
+                                        <p>Template</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+
+                                    <a class="nav-link" href="/admin/layout">
+                                        <i class="fa fa-laptop-house nav-icon" aria-hidden="true"></i>
+                                        <p>Layout</p>
+                                    </a>
+                                </li>
+
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/admin/settings">
+                                        <i class="fa fa-cog nav-icon" aria-hidden="true"></i>
+                                        <p>Settings</p>
+                                    </a>
+                                </li>
+                            }
+                            <li class="nav-item">
+                                <div class="border mt-2"></div>
+                            </li>
+                            <li class="nav-item">
+
+                                <a href="/" target="_blank" class="nav-link">
+                                    <i class="fa fa-meh-rolling-eyes nav-icon" aria-hidden="true"></i>
+                                    <p>Site</p>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-10 container-body">
+
+                    @RenderBody()
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="/adminwwwroot/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/adminwwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/adminwwwroot/font-awesome/js/all.min.js"></script>
+    <script src="/adminwwwroot/js/microsoft/signalr/dist/browser/signalr.min.js"></script>
+   <script src="/adminwwwroot/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("scripts", required: false)
+</body>
+</html>

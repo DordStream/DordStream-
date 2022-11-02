@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Comments";
+    Layout = "_AdminLayout";
+}
+@section Scripts{
+    <script src="/adminwwwroot/js/b29cb87e-ca0b-4a6e-97fe-73bf575980a0.js" asp-append-version="true"></script>
+
+}
+<div class="container-fluid shadow-sm border">
+    <div class="media mt-2 mb-5">
+        <input type="date" class="custom-control borderless" id="commentDate" />
+        <div class="media-body">
+            <input type="checkbox" class="custom-control custom-checkbox ml-auto" id="comment-checkboxes" />
+        </div>
+
+    </div>
+    <div id="selectedItem">
+        <div class="media border justify-content-around pt-2 pb-1 mt-2 align-items-baseline">
+            <div class="input-group">
+                <a href="#" class="close mr-2" id="selectedItemIClose">&times;</a>
+                |
+                <p class="ml-2 selected-text" id="selected"></p>
+            </div>
+            <div class="input-group justify-content-end ml-auto">
+                <a href="#" title="Delete" class="mr-3" id="delete_all">
+                    <i class="fa fa-trash text-success"></i>
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="main right-over-flow" id="main">
+
+    </div>
+</div>
