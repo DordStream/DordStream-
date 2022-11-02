@@ -2,9 +2,9 @@
 
 DordStream is a framework that shares aspects of Web Applications Framework (WAF) and Content Management System (CMS).
 
-A framework is a system that facilitates the use of reusable components and supporting structure for building a software i.e. foundation for developing a software. 
+What is Framework:  A framework is a system that facilitates the use of reusable components and supporting structure for building a software i.e. foundation for developing a software. 
 
-A content management system (CMS) is a system used to manage the content of a website and reusing a code library (Themes). Typically, a CMS consists of two elements:
+What is content management system:  A content management system (CMS) is a system used to manage the content of a website and reusing a code library (Themes). Typically, a CMS consists of two elements:
 1.	The Content Management Application (CMA) and
 2.	The Content Delivery Application (CDA).
 
@@ -12,7 +12,7 @@ The CMA element allows the content manager or author, who may not know Hypertext
 
 The CDA element uses and compiles that the information to update the web site. The features of DordStream CMS System, include Web-based publishing, format management, revision control and indexing, search, retrieval, user and role-based administration, flexibility, scalability and performance, multichannel scalability and security.
 
-A web application framework (WAF) is a software framework that is designed to support the development of web application. Web frameworks aim to automate the overhead associated with common activities performed in web development and creating a custom code library. DordStream provide libraries (Module) for database access, templating frameworks. etc. and also promote code reuse. The framework based on the Model-View-Controller (MVC) architectural pattern. the framework follow MVC architectural pattern to separate the data model into business rules (the “controller”) and user interface (the “view”). This is generally considered a good practice as it modularizes code, promotes code reuse, and allows multiple interfaces to be applied. The frameworks follow a push-based architecture also called “action-based”. This framework use actions that do the required processing, and the push the data to the view layer to render the result. In this architecture, single controller can be involved with multiple views. The framework can be used to create a single-page application because it makes heavy use of JavaScript which allow only refresh parts of the page. The framework is File-based Route.
+What is web application framework:  A web application framework (WAF) is a software framework that is designed to support the development of web application. Web frameworks aim to automate the overhead associated with common activities performed in web development and creating a custom code library. DordStream provide libraries (Module) for database access, templating frameworks. etc. and also promote code reuse. The framework based on the Model-View-Controller (MVC) architectural pattern. the framework follow MVC architectural pattern to separate the data model into business rules (the “controller”) and user interface (the “view”). This is generally considered a good practice as it modularizes code, promotes code reuse, and allows multiple interfaces to be applied. The frameworks follow a push-based architecture also called “action-based”. This framework use actions that do the required processing, and the push the data to the view layer to render the result. In this architecture, single controller can be involved with multiple views. The framework can be used to create a single-page application because it makes heavy use of JavaScript which allow only refresh parts of the page. The framework is File-based Route.
 
 In DordStream, WAF categorized developer into two groups.
 1.	Front-End Developers (FED) and
