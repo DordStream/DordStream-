@@ -1,6 +1,6 @@
  DORDSTREAM.
 
-DordStream is a framework that shares aspects of Web Applications Framework (WAF) and Content Management System (CMS).
+DordStream is a software  that shares aspects of Web Applications Framework (WAF) and Content Management System (CMS).
 
 What is Framework:  A framework is a system that facilitates the use of reusable components and supporting structure for building a software i.e. foundation for developing a software. 
 
