@@ -1,10 +1,18 @@
  DORDSTREAM.
 
+<<<<<<< HEAD
 DordStream is a free and open source software  that shares aspects of Web Applications Framework (WAF) and Content Management System (CMS).
 
 DordStream facilitates the use of reusable components and supporting structure for building a software i.e. foundation for developing a software. 
 
  A content management system (CMS) is a system used to manage the content of a website and reusing a code library (Themes). Typically, a CMS consists of two elements:
+=======
+DordStream is a software  that shares aspects of Web Applications Framework (WAF) and Content Management System (CMS).
+
+What is Framework:  A framework is a system that facilitates the use of reusable components and supporting structure for building a software i.e. foundation for developing a software. 
+
+What is content management system:  A content management system (CMS) is a system used to manage the content of a website and reusing a code library (Themes). Typically, a CMS consists of two elements:
+>>>>>>> 40fd786becb7fb5b23bca3fed28f1fa759ed87a9
 1.	The Content Management Application (CMA) and
 2.	The Content Delivery Application (CDA).
 
@@ -12,7 +20,11 @@ The CMA element allows the content manager or author, who may not know Hypertext
 
 The CDA element uses and compiles that the information to update the web site. The features of DordStream CMS System, include Web-based publishing, format management, revision control and indexing, search, retrieval, user and role-based administration, flexibility, scalability and performance, multichannel scalability and security.
 
+<<<<<<< HEAD
  A web application framework (WAF) is a software framework that is designed to support the development of web application. Web frameworks aim to automate the overhead associated with common activities performed in web development and creating a custom code library. DordStream provide libraries (Module) for database access, templating frameworks. etc. and also promote code reuse. The framework based on the Model-View-Controller (MVC) architectural pattern. the framework follow MVC architectural pattern to separate the data model into business rules (the “controller”) and user interface (the “view”). This is generally considered a good practice as it modularizes code, promotes code reuse, and allows multiple interfaces to be applied. The frameworks follow a push-based architecture also called “action-based”. This framework use actions that do the required processing, and the push the data to the view layer to render the result. In this architecture, single controller can be involved with multiple views. The framework can be used to create a single-page application because it makes heavy use of JavaScript which allow only refresh parts of the page. The framework is File-based Route.
+=======
+What is web application framework:  A web application framework (WAF) is a software framework that is designed to support the development of web application. Web frameworks aim to automate the overhead associated with common activities performed in web development and creating a custom code library. DordStream provide libraries (Module) for database access, templating frameworks. etc. and also promote code reuse. The framework based on the Model-View-Controller (MVC) architectural pattern. the framework follow MVC architectural pattern to separate the data model into business rules (the “controller”) and user interface (the “view”). This is generally considered a good practice as it modularizes code, promotes code reuse, and allows multiple interfaces to be applied. The frameworks follow a push-based architecture also called “action-based”. This framework use actions that do the required processing, and the push the data to the view layer to render the result. In this architecture, single controller can be involved with multiple views. The framework can be used to create a single-page application because it makes heavy use of JavaScript which allow only refresh parts of the page. The framework is File-based Route.
+>>>>>>> 40fd786becb7fb5b23bca3fed28f1fa759ed87a9
 
 In DordStream, WAF categorizes developers into two groups.
 1.	Front-End Developers (FED) and
@@ -20,11 +32,17 @@ In DordStream, WAF categorizes developers into two groups.
 
 
 The FED are the developers that developed a static web page i.e. designing a web page with HTML and CSS languages. In DordStream, FED developers are allow to create a custom code library which is limited to Blog and website (static and dynamic).
+<<<<<<< HEAD
  Learn and become DordStream Front-End Developer, Download link: https://drive.google.com/file/d/1_zY5ffoHbvPfJ-B2DQo-aekBE05Zyzft/view?usp=share_link
+
+=======
+ Learn and become DordStream Front-End Developer, Download link: https://drive.google.com/file/d/19VHYi9U-c8awa7HMLnw0xWKr0UMJ98T7/view?usp=share_link
+>>>>>>> 40fd786becb7fb5b23bca3fed28f1fa759ed87a9
 
 
 The FSD are the developers that developed a web page and code behind the scene (back-end). (code behind the scene means writing a script, working with database etc.). The supported languages for creating a custom code library in FSD are HTML, CSS, JAVASCRIPT and C# (deep knowledge in C# is not mandated). Creating a custom code library in FSD is not limited. 
  Learn and become DordStream Full-Stack Developer, Download link: https://drive.google.com/file/d/1w84uzdZgB8PAI03_B4QG9R7y1cXHJyv9/view?usp=share_link
+
 
 
 
@@ -68,6 +86,12 @@ Projects achieved with DordStream
 
 Many more can be achieved with DordStream.
 
+<<<<<<< HEAD
+=======
+
+Download the DordStream Software zip file from this page and unzip the file.
+Or Download DordStream Software Directly from Our Google Drive, Link: https://drive.google.com/file/d/11hmJh1bSDTPOOS09tb5Dib0OAg_agRwn/view?usp=share_link
+>>>>>>> 40fd786becb7fb5b23bca3fed28f1fa759ed87a9
 
 Download the DordStream Software zip file from this page and unzip the file.
 
