@@ -14,7 +14,7 @@ The CDA element uses and compiles that the information to update the web site. T
 
 What is web application framework:  A web application framework (WAF) is a software framework that is designed to support the development of web application. Web frameworks aim to automate the overhead associated with common activities performed in web development and creating a custom code library. DordStream provide libraries (Module) for database access, templating frameworks. etc. and also promote code reuse. The framework based on the Model-View-Controller (MVC) architectural pattern. the framework follow MVC architectural pattern to separate the data model into business rules (the “controller”) and user interface (the “view”). This is generally considered a good practice as it modularizes code, promotes code reuse, and allows multiple interfaces to be applied. The frameworks follow a push-based architecture also called “action-based”. This framework use actions that do the required processing, and the push the data to the view layer to render the result. In this architecture, single controller can be involved with multiple views. The framework can be used to create a single-page application because it makes heavy use of JavaScript which allow only refresh parts of the page. The framework is File-based Route.
 
-In DordStream, WAF categorized developer into two groups.
+In DordStream, WAF categorizes developer into two groups.
 1.	Front-End Developers (FED) and
 2.	Full-Stack Developers (FSD).
 
@@ -76,7 +76,7 @@ Mobile: +2348086977523, +2347013943034
 
 Whatsapp: +2347013943034
 
-Mail: dordstream62@outlook.com
+Mail: barccomet04@outlook.com
 
 Youtube Channel : http://www.youtube.com/channel/UCpp87MTauAmcEx8M3MvNwqQ 
 
