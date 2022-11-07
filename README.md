@@ -1,4 +1,4 @@
- DORDSTREAM.
+ DORDSTREAM: Newly Introduced Technology For easy development of web application 
 
 
 DordStream is a free and open source software  that shares aspects of Web Applications Framework (WAF) and Content Management System (CMS).
