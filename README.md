@@ -40,15 +40,18 @@ The FSD are the developers that developed a web page and code behind the scene (
 
 
 Purposes 
+
 The purpose of the framework is to simplify the development environment, allowing developers to dedicate their efforts to the project requirements, rather than dealing with framework’s repetitive functions and libraries, and time saver.
 
 
 Limitations
+
 1.	The framework can not be used to create a web application programming interface (API).
 2.	The Framework can not be used to create a route with POST Method.
 
 
 Benefits Web Application Framework (WAF) in DordStream
+
 1.	Efficiency: Pre-built function allows you to complete tasks that formerly required hours and hundred of lines of code in just a few short steps, when development I considerably simpler, it goes significantly faster and is therefore, more efficient.
 2.	Expense: The cost for the end client will be lower because most popular structures are free and enable developers to write code more quickly.
 3.	Easy Code Reusability: With web framework at their disposal, developers do not need to write complex code structures containing hundreds of lines of code. Instead they can use the pre-defined codebase and make easy modification to perform seamless bootstrapping.
@@ -58,6 +61,7 @@ Benefits Web Application Framework (WAF) in DordStream
 
 
 Benefits Content Management System (CMS) in DordStream
+
 1.	User-Friendly.
 2.	Quick Deployment.
 3.	Ease of maintenance, including updates. 
