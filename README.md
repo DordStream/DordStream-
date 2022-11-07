@@ -35,9 +35,6 @@ The FED are the developers that developed a static web page i.e. designing a web
  Learn and become DordStream Front-End Developer, Download link: https://drive.google.com/file/d/1_zY5ffoHbvPfJ-B2DQo-aekBE05Zyzft/view?usp=share_link
 
 
- Learn and become DordStream Front-End Developer, Download link: https://drive.google.com/file/d/19VHYi9U-c8awa7HMLnw0xWKr0UMJ98T7/view?usp=share_link
-
-
 The FSD are the developers that developed a web page and code behind the scene (back-end). (code behind the scene means writing a script, working with database etc.). The supported languages for creating a custom code library in FSD are HTML, CSS, JAVASCRIPT and C# (deep knowledge in C# is not mandated). Creating a custom code library in FSD is not limited. 
  Learn and become DordStream Full-Stack Developer, Download link: https://drive.google.com/file/d/1w84uzdZgB8PAI03_B4QG9R7y1cXHJyv9/view?usp=share_link
 
