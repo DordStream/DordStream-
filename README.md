@@ -78,8 +78,8 @@ Projects achieved with DordStream
 1.	Trending Blog: This is a blog where discussion or Informational website published consisting of discrete, often informal diary-style entries (Posts). Developed By DordStream Front-End Developer (FED)
 2.	Web Blog: This is a blog where discussion or Informational website published consisting of discrete, often informal diary-style entries (Posts). Developed By DordStream Front-End Developer (FED)
 3.	Beauty Blog: This is a beauty blog. Developed By DordStream Front-End Developer (FED)
-4.	Public Attendance: This is an application that keeps record of attended participant. This application can be used in public libraries, departmental libraries. Etc. Developed By DordStream Full-Stack Developer (FSD)
-5.	Face Capturing Attendance: This is an application that keep record of attended participant by validating faces. This application can be used in a meeting, companies, Schools. Etc. Developed By DordStream Full-Stack Developer (FSD)
+4.	Unathorize Attendance System: This is an application that keeps record of attended participant. This application can be used in public libraries, departmental libraries. Etc. Developed By DordStream Full-Stack Developer (FSD)
+5.	Face Recognition Attendance System: This is an application that keep record of attended participant by validating faces. This application can be used in a meeting, companies, Schools. Etc. Developed By DordStream Full-Stack Developer (FSD)
 
 Many more can be achieved with DordStream.
 
