@@ -3,7 +3,7 @@ DORDSTREAM : A NEWLY DEVELOPED TECHNOLOGY FOR WEB DEVELOPMENT AND/OR CREATION.
 
 DordStream is a free and open source software  that shares aspects of Web Applications Framework (WAF) and Content Management System (CMS).
 
-DordStream is a software that facilitates the use of reusable components and supporting structure for building a software i.e. foundation for developing a software. 
+DordStream is a software that facilitates the use of reusable components and supporting structure for building a web software i.e. foundation for developing a web software. 
 
 
 What does content management system aspects means In DordStream ?:  
