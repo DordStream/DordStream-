@@ -85,12 +85,9 @@ Many more can be achieved with DordStream.
 
 
 Download the DordStream Software zip file from this page and unzip the file.
-Or Download DordStream Software Directly from Our Google Drive, Link: https://drive.google.com/file/d/11hmJh1bSDTPOOS09tb5Dib0OAg_agRwn/view?usp=share_link
-
-
-Download the DordStream Software zip file from this page and unzip the file.
 
 Or Download DordStream Software Directly from Our Google Drive, Link: https://drive.google.com/file/d/1uLvFYSSsdMUjHC7pff5PecLYu-TXtWft/view?usp=share_link
+
 Mobile: +2348086977523, +2347013943034
 
 Whatsapp: +2347013943034
