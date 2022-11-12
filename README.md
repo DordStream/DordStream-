@@ -1,88 +1,65 @@
-DORDSTREAM : A NEWLY DEVELOPED TECHNOLOGY FOR WEB DEVELOPMENT AND/OR CREATION.
+DORDSTREAM: A NEWLY DEVELOPED TECHNOLOGY FOR WEB DEVELOPMENT ABSTRACT
+ABSTRACT 
+This software titled “DordStream” aims to show the alternative procedure and of course a newly developed simple process of the creation, building and development of websites effortlessly. This software has been able to simplify and section developers into two in order to create a dynamic professional websites without consuming much time. Arguably, the creation, building and development of websites are taxing. However, this software introduces another less-difficult procedure in the creation of websites. Thus, with this software, one can create one’s choice and desired website at ease and earn with the 
 
-
-DordStream is a free and open source software  that shares aspects of Web Applications Framework (WAF) and Content Management System (CMS).
-
-DordStream is a software that facilitates the use of reusable components and supporting structure for building a web software i.e. foundation for developing a web software. 
-
-
-What does content management system aspects means In DordStream ?:  
-
- A content management system (CMS) is a system used to manage the content of a website and reusing a code library (Themes). Typically, a CMS consists of two elements:
-
-1.	The Content Management Application (CMA) and
-2.	The Content Delivery Application (CDA).
-
+Introduction 
+DordStream is a free and open source software that shares aspects of Web Applications Framework (WAF) and Content Management System (CMS).
+DordStream is a software that facilitates the use of reusable components and supporting structure for building a web software i.e. foundation for developing a web software.
+What does Content Management System aspects means in DordStream?
+A Content Management System (CMS) is a system used to manage the content of a website and reusing a code library (Themes). Typically, a CMS consists of two elements:
+The Content Management Application (CMA); and
+The Content Delivery Application (CDA).
 The CMA element allows the content manager or author, who may not know Hypertext Markup Language (HTML), to manage the creation, modification, and removal of content from a web site without needing the expertise of a webmaster.
-
 The CDA element uses and compiles that the information to update the web site. The features of DordStream CMS System, include Web-based publishing, format management, revision control and indexing, search, retrieval, user and role-based administration, flexibility, scalability and performance, multichannel scalability and security.
+What does web application framework aspects means in DordStream?
+A web application framework (WAF) is a software framework that is designed to support the development of web application. Web frameworks aim to automate the overhead associated with common activities performed in web development and creating a custom code library. DordStream provide libraries (Module) for database access, templating frameworks etc. and also promote code reuse. The framework based on the Model-View-Controller (MVC) architectural pattern. The framework follow MVC architectural pattern to separate the data model into business rules (the “controller”) and user interface (the “view”). This is generally considered a good practice as it modularizes code, promotes code reuse, and allows multiple interfaces to be applied. The frameworks follow a push-based architecture also called 
 
-
-What does web application framework aspects means In DordStream ?:
- 
- A web application framework (WAF) is a software framework that is designed to support the development of web application. Web frameworks aim to automate the overhead associated with common activities performed in web development and creating a custom code library. DordStream provide libraries (Module) for database access, templating frameworks. etc. and also promote code reuse. The framework based on the Model-View-Controller (MVC) architectural pattern. the framework follow MVC architectural pattern to separate the data model into business rules (the “controller”) and user interface (the “view”). This is generally considered a good practice as it modularizes code, promotes code reuse, and allows multiple interfaces to be applied. The frameworks follow a push-based architecture also called “action-based”. This framework use actions that do the required processing, and the push the data to the view layer to render the result. In this architecture, single controller can be involved with multiple views. The framework can be used to create a single-page application because it makes heavy use of JavaScript which allow only refresh parts of the page. The framework is File-based Route.
-
-
+“action-based”. This framework use actions that do the required processing, and the push the data to the view layer to render the result. In this architecture, single controller can be involved with multiple views. The framework can be used to create a single-page application because it makes heavy use of JavaScript which allow only refresh parts of the page. The framework is File-based Route.
 In DordStream, WAF categorizes developers into two groups.
-1.	Front-End Developers (FED) and
-2.	Full-Stack Developers (FSD).
-
-
+Front-End Developers (FED) and
+Full-Stack Developers (FSD).
 The FED are the developers that developed a static web page i.e. designing a web page with HTML and CSS languages. In DordStream, FED developers are allow to create a custom code library which is limited to Blog and website (static and dynamic).
+Learn and become DordStream Front-End Developer, Download link: https://drive.google.com/file/d/1_zY5ffoHbvPfJ-B2DQo-aekBE05Zyzft/view?usp=share_link
+The FSD are the developers that developed a web page and code behind the scene (back-end) (code behind the scene means writing a script, working with database etc.). The supported languages for creating a custom code library in FSD are HTML, CSS, JAVASCRIPT and C# (deep knowledge in C# is not mandated). Creating a custom code library in FSD is not limited. Learn and become DordStream Full-Stack Developer, Download link: https://drive.google.com/file/d/1w84uzdZgB8PAI03_B4QG9R7y1cXHJyv9/view?usp=share_link
 
- Learn and become DordStream Front-End Developer, Download link: https://drive.google.com/file/d/1_zY5ffoHbvPfJ-B2DQo-aekBE05Zyzft/view?usp=share_link
+Aims and Objectives
+This section explicates the aim and objectives of the research which include but not limited to the following:
+To make web development simple and easy
+To reduce the time consumed in web development
 
+Purposes
+The purpose of Dordstream is to simplify the development environment, allowing developers to dedicate their efforts to the project requirements, rather than dealing 
+with framework’s repetitive functions and libraries, and time saver.
 
-The FSD are the developers that developed a web page and code behind the scene (back-end). (code behind the scene means writing a script, working with database etc.). The supported languages for creating a custom code library in FSD are HTML, CSS, JAVASCRIPT and C# (deep knowledge in C# is not mandated). Creating a custom code library in FSD is not limited. 
- Learn and become DordStream Full-Stack Developer, Download link: https://drive.google.com/file/d/1w84uzdZgB8PAI03_B4QG9R7y1cXHJyv9/view?usp=share_link
+Benefits Web Application Framework (WAF) in DordStream
+Efficiency: Pre-built function allows you to complete tasks that formerly required hours and hundreds of lines of code in just a few short steps, when development I considerably simpler, it goes significantly faster and is therefore, more efficient.
+Expense: The cost for the end client will be lower because most popular structures are free and enable developers to write code more quickly.
+Easy Code Reusability: With web framework at their disposal, developers do not need to write complex code structures containing hundreds of lines of code. Instead they can use the pre-defined codebase and make easy modification to perform seamless bootstrapping.
+Enhanced Security: The Increasing instance of cyber-attacks have raised serious security concerns related to web development. However, the use of framework for web application development let you protect and safe-guild your web application against common attacks like Cross-site Scripting, SQL injection and prevents data tampering.
+Developer and Community Support.
 
-
-
-
-Purposes 
-
-The purpose of the framework is to simplify the development environment, allowing developers to dedicate their efforts to the project requirements, rather than dealing with framework’s repetitive functions and libraries, and time saver.
+Benefits Content Management System (CMS) in DordStream
+User-Friendly.
+Quick Deployment.
+Ease of maintenance, including updates.
+Cost-efficiency.
+Extendable Functionality, through modules
+No Coding.
+Improved Security.
+Developer and Community Support
 
 
 Limitations
+The software cannot be used to create a web application programming interface (API).
+The software cannot be used to create a route with POST Method.
 
-1.	The framework can not be used to create a web application programming interface (API).
-2.	The Framework can not be used to create a route with POST Method.
-
-
-Benefits Web Application Framework (WAF) in DordStream
-
-1.	Efficiency: Pre-built function allows you to complete tasks that formerly required hours and hundred of lines of code in just a few short steps, when development I considerably simpler, it goes significantly faster and is therefore, more efficient.
-2.	Expense: The cost for the end client will be lower because most popular structures are free and enable developers to write code more quickly.
-3.	Easy Code Reusability: With web framework at their disposal, developers do not need to write complex code structures containing hundreds of lines of code. Instead they can use the pre-defined codebase and make easy modification to perform seamless bootstrapping.
-4.	Enhanced Security: The Increasing instance of cyber-attacks have raised serious security concerns related to web development. However, the use of framework for web application development let you protect and safe-guild your web application against common attacks like Cross-site Scripting, SQL injection and prevents data tampering.
-5.	Developer and Community Support.  
-
-
-
-Benefits Content Management System (CMS) in DordStream
-
-1.	User-Friendly.
-2.	Quick Deployment.
-3.	Ease of maintenance, including updates. 
-4.	Cost-efficiency.
-5.	Extendable Functionality, through modules
-6.	No Coding.
-7.	Improved Security.
-8.	Developer and Community Support
-
-
-
-Projects achieved with DordStream
-
-1.	Trending Blog: This is a blog where discussion or Informational website published consisting of discrete, often informal diary-style entries (Posts). Developed By DordStream Front-End Developer (FED)
-2.	Web Blog: This is a blog where discussion or Informational website published consisting of discrete, often informal diary-style entries (Posts). Developed By DordStream Front-End Developer (FED)
-3.	Beauty Blog: This is a beauty blog. Developed By DordStream Front-End Developer (FED)
-4.	Unathorize Attendance System: This is an application that keeps record of attended participant. This application can be used in public libraries, departmental libraries. Etc. Developed By DordStream Full-Stack Developer (FSD)
-5.	Face Recognition Attendance System: This is an application that keep record of attended participant by validating faces. This application can be used in a meeting, companies, Schools. Etc. Developed By DordStream Full-Stack Developer (FSD)
-
+Projects Achieved with DordStream
+Trending Blog: This is a blog where discussion or Informational website published consisting of discrete, often informal diary-style entries (Posts). Developed By DordStream Front-End Developer (FED)
+Web Blog: This is a blog where discussion or Informational website published consisting of discrete, often informal diary-style entries (Posts). Developed By DordStream Front-End Developer (FED)
+Beauty Blog: This is a beauty blog. Developed By DordStream Front-End Developer (FED)
+Unauthorized and Unverified Attendance System: This is an application that keeps record of attended participant. This application can be used in public libraries, departmental libraries. Etc. Developed By DordStream Full-Stack Developer (FSD)
+Face Recognition Attendance System: This is an application that keeps record of attended participant by validating faces. This application can be used in a meeting, companies, Schools. Etc. Developed By DordStream Full-Stack Developer (FSD)
 Many more can be achieved with DordStream.
-
 
 Download the DordStream Software zip file from this page and unzip the file.
 
@@ -97,4 +74,3 @@ Mail: barccomet04@outlook.com
 Youtube Channel : http://www.youtube.com/channel/UCpp87MTauAmcEx8M3MvNwqQ 
 
 Facebook: https://www.facebook.com/profile.php?id=100003468655180
-
