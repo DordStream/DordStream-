@@ -35,7 +35,7 @@ Features of DordStream
 
 Code Samples
 
-1. Example of Database Integration. The following codes check if the table exist in database, if not it will create a new table and use the data from user to determine the suitable datatype for the column. 
+1. Example of Database Integration. The following codes check if the table exist in database, if not it will create a new table and use the data from user to determine the suitable datatype for the column.(C#) 
 
 ```c#
 //using add Ds-Sql to command the database table
@@ -46,11 +46,11 @@ value.Add("DordStream Student");
 value.Add(15);
 //calling IDbCommand interface which has be initialized in the Constructor
 //using ExecuteQuery to execute the command in the database
-//Creat the database table if not exist
+//Create the database table if not exist
 await command.ExecuteQueryAsync(addQuery,value);
 
 ```
-2. The following codes upload files to the server 
+2. The following codes upload files to the server (Javascript)
 
 ```javascript
 var fileSystem = new FileSystem("formId");
@@ -66,7 +66,7 @@ alert(response);
 }
 ```
 
-3. The following code retrieve and display the recent posts on the website using recentposts tag.
+3. The following code retrieve and display the recent posts on the website using recentposts tag.(Html)
 ```htm
 <ul id="slider3">
 <recentposts ds-count="8" ds-title-length="30" ds-content-length="50" id="callbacks1_s0">
@@ -99,7 +99,7 @@ alert(response);
 						</ul>
 ```
 
-4. The following code create a search form and allow user to search and display the content on the website
+4. The following code create a search form and allow user to search and display the content on the website (Html)
 
 ```htm
 <div id="cd-search" class="cd-search">
