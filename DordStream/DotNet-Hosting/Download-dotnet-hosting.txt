@@ -1,0 +1,1 @@
+Download and install dotnet-hosting from, https://dotnet.microsoft.com/permalink/dotnetcore-current-windows-runtime-bundle-installer

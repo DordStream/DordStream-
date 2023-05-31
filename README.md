@@ -1,91 +1,126 @@
-DORDSTREAM: A NEWLY DEVELOPED TECHNOLOGY FOR WEB DEVELOPMENT ABSTRACT
-
-ABSTRACT 
-
-This software titled “DordStream” aims to show the alternative procedure and of course a newly developed simple process of the creation, building and development of websites effortlessly. This software has been able to simplify and section developers into two in order to create a dynamic professional websites without consuming much time. Arguably, the creation, building and development of websites are taxing. However, this software introduces another less-difficult procedure in the creation of websites. Thus, with this software, one can create one’s choice and desired website at ease and earn with the 
-
-Introduction 
-
-DordStream is a free and open source software that shares aspects of Web Applications Framework (WAF) and Content Management System (CMS).
-DordStream is a software that facilitates the use of reusable components and supporting structure for building a web software i.e. foundation for developing a web software.
-
-What does Content Management System aspects means in DordStream?
-
-A Content Management System (CMS) is a system used to manage the content of a website and reusing a code library (Themes). Typically, a CMS consists of two elements:
-
-The Content Management Application (CMA); and
-
-The Content Delivery Application (CDA).
-
-The CMA element allows the content manager or author, who may not know Hypertext Markup Language (HTML), to manage the creation, modification, and removal of content from a web site without needing the expertise of a webmaster.
-The CDA element uses and compiles that the information to update the web site. The features of DordStream CMS System, include Web-based publishing, format management, revision control and indexing, search, retrieval, user and role-based administration, flexibility, scalability and performance, multichannel scalability and security.
-What does web application framework aspects means in DordStream?
-
-A web application framework (WAF) is a software framework that is designed to support the development of web application. Web frameworks aim to automate the overhead associated with common activities performed in web development and creating a custom code library. DordStream provide libraries (Module) for database access, templating frameworks etc. and also promote code reuse. The framework based on the Model-View-Controller (MVC) architectural pattern. The framework follow MVC architectural pattern to separate the data model into business rules (the “controller”) and user interface (the “view”). This is generally considered a good practice as it modularizes code, promotes code reuse, and allows multiple interfaces to be applied. The frameworks follow a push-based architecture also called 
-
-“action-based”. This framework use actions that do the required processing, and the push the data to the view layer to render the result. In this architecture, single controller can be involved with multiple views. The framework can be used to create a single-page application because it makes heavy use of JavaScript which allow only refresh parts of the page. The framework is File-based Route.
-In DordStream, WAF categorizes developers into two groups.
-Front-End Developers (FED) and
-Full-Stack Developers (FSD).
-The FED are the developers that developed a static web page i.e. designing a web page with HTML and CSS languages. In DordStream, FED developers are allow to create a custom code library which is limited to Blog and website (static and dynamic).
-Learn and become DordStream Front-End Developer, Download link: https://drive.google.com/file/d/1_zY5ffoHbvPfJ-B2DQo-aekBE05Zyzft/view?usp=share_link
-The FSD are the developers that developed a web page and code behind the scene (back-end) (code behind the scene means writing a script, working with database etc.). The supported languages for creating a custom code library in FSD are HTML, CSS, JAVASCRIPT and C# (deep knowledge in C# is not mandated). Creating a custom code library in FSD is not limited. Learn and become DordStream Full-Stack Developer, Download link: https://drive.google.com/file/d/1w84uzdZgB8PAI03_B4QG9R7y1cXHJyv9/view?usp=share_link
-
-Aims and Objectives
-
-This section explicates the aim and objectives of the research which include but not limited to the following:
-To make web development simple and easy
-To reduce the time consumed in web development
-
-Purposes
-
-The purpose of Dordstream is to simplify the development environment, allowing developers to dedicate their efforts to the project requirements, rather than dealing 
-with framework’s repetitive functions and libraries, and time saver.
-
-Benefits Web Application Framework (WAF) in DordStream
-
-Efficiency: Pre-built function allows you to complete tasks that formerly required hours and hundreds of lines of code in just a few short steps, when development I considerably simpler, it goes significantly faster and is therefore, more efficient.
-Expense: The cost for the end client will be lower because most popular structures are free and enable developers to write code more quickly.
-Easy Code Reusability: With web framework at their disposal, developers do not need to write complex code structures containing hundreds of lines of code. Instead they can use the pre-defined codebase and make easy modification to perform seamless bootstrapping.
-Enhanced Security: The Increasing instance of cyber-attacks have raised serious security concerns related to web development. However, the use of framework for web application development let you protect and safe-guild your web application against common attacks like Cross-site Scripting, SQL injection and prevents data tampering.
-Developer and Community Support.
-
-Benefits Content Management System (CMS) in DordStream
-
-User-Friendly.
-Quick Deployment.
-Ease of maintenance, including updates.
-Cost-efficiency.
-Extendable Functionality, through modules
-No Coding.
-Improved Security.
-Developer and Community Support
+ DORDSTREAM (WEB MADE EASY) (Web Framework)
+DordStream is a software development tools that provide set of tools, Modules and Application to support the development of website and web application.It provides a simple way and alternative method of creating or developing a web application. DordStream is a Cross-Platform and Open Source Software.
 
 
-Limitations
+DordStream provides two mode of Development
 
-The software cannot be used to create a web application programming interface (API).
-The software cannot be used to create a route with POST Method.
+1.  Website : DordStream will allow you to create a website from scratch without writing any backend code. just Html and CSS. such as blog and website
+2. Web Application : DordStream will allow you to create or develop a web application with basic knowledge in C#. such as web software. e.g Amazon, Facebook, Attendance Sheet and so on
 
-Projects Achieved with DordStream
 
-Trending Blog: This is a blog where discussion or Informational website published consisting of discrete, often informal diary-style entries (Posts). Developed By DordStream Front-End Developer (FED)
-Web Blog: This is a blog where discussion or Informational website published consisting of discrete, often informal diary-style entries (Posts). Developed By DordStream Front-End Developer (FED)
-Beauty Blog: This is a beauty blog. Developed By DordStream Front-End Developer (FED)
-Unauthorized and Unverified Attendance System: This is an application that keeps record of attended participant. This application can be used in public libraries, departmental libraries. Etc. Developed By DordStream Full-Stack Developer (FSD)
-Face Recognition Attendance System: This is an application that keeps record of attended participant by validating faces. This application can be used in a meeting, companies, Schools. Etc. Developed By DordStream Full-Stack Developer (FSD)
-Many more can be achieved with DordStream.
+Benefits of Using DordStream
 
-Download the DordStream Software zip file from this page and unzip the file.
+1. Faster development: It provides developers with pre-built components and modules that can be used to quickly build and deploy web application.
+2. Code organization: It follows a structured approach to development, which helps in organizing code in a more readable and maintainable manner.
+3. Scalability: It allows developers to build application that can scale easily with the increasing user base.
+4. Security: It provides built-in security features such as input validation, CSRF protection, password hashing and run on secure protocol.
+5. Extension: It provides extension point that allow developers or non-developers to add new functionality to the web application.
+6. Community support: It have large and active communities that provide support, resources and updates to the developers. This make it easier for developers to get help and stay up-to-date with the latest developments in the field.
 
-Or Download DordStream Software Directly from Our Google Drive, Link: https://drive.google.com/file/d/1uLvFYSSsdMUjHC7pff5PecLYu-TXtWft/view?usp=share_link
 
-Mobile: +2348086977523, +2347013943034
 
-Whatsapp: +2347013943034
 
-Mail: barccomet04@outlook.com
+Features of DordStream
+
+1. Model-View-Controller (MVC)
+2. Routing
+3. Templating
+4. Database Integration
+5. Security features
+6. Content creation and editing
+7. Content storage and organization
+8. Content publishing
+9. User Management 
+
+
+Code Samples
+
+1. Example of Database Integration. The following codes check if the table exist in database, if not it will create a new table and use the data from user to determine the suitable datatype for the column. 
+
+```c#
+//using add Ds-Sql to command the database table
+string addQuery = "add Name=@1, Age=@2 into TableName";
+//using DbValue to store the data
+DbValue value = new DbValue();
+value.Add("DordStream Student");
+value.Add(15);
+//calling IDbCommand interface which has be initialized in the Constructor
+//using ExecuteQuery to execute the command in the database
+//Creat the database table if not exist
+await command.ExecuteQueryAsync(addQuery,value);
+
+```
+2. The following codes upload files to the server 
+
+```javascript
+var fileSystem = new FileSystem("formId");
+
+function upload()
+{
+fileSystem.upload((response)=>{
+
+alert(response);
+
+},(progress)=>{});
+
+}
+```
+
+3. The following code retrieve and display the recent posts on the website using recentposts tag.
+```htm
+<ul id="slider3">
+<recentposts ds-count="8" ds-title-length="30" ds-content-length="50" id="callbacks1_s0">
+
+                                <li id="li065">
+                                    <div class="banner-info-slider" id="div0736">
+                                        <ul id="ul0989">
+                                            <li id="li0415"><a href="#" ds-name="1" id="a0988">Blogger</a></li>
+                                            <li ds-date="1" id="li0578">30th August 2021</li>
+                                        </ul>
+                                        <h3 ds-title="1" id="h30898">Stress Full Business Man</h3>
+                                        <p id="p0549"><span ds-content="1" id="span0316">Lorem ipsum dolor
+                                            symptoms can include.</span>
+                                    
+                                    
+                                        <span id="span0183">By <i ds-author="1" id="i0728">ullamcoman</i></span>
+                                    </p>
+                                        
+                                        <div class="more" id="div0236">
+                                            <a href="#" ds-link="1" class="type-1" id="a0944">
+                                                <span id="span0798"> Read More </span>
+                                                <span id="span0859"> Read More </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </recentposts>
+							
+						</ul>
+```
+
+4. The following code create a search form and allow user to search and display the content on the website
+
+```htm
+<div id="cd-search" class="cd-search">
+ <form action="#" method="post" ds-action="search" ds-name="My Seacrh Name" ds-description="Search Form">
+                            <input name="Search" type="search" placeholder="search site" ds-title="1">
+                        </form>
+				
+				</div>
+
+```
+
+
+
+
+
+Author Mobile: +2347013943034, +2348086977523, +2347031928980
+
+Author Whatsapp: +2347013943034
+
+Author Mail: barccomet04@gmail.com
 
 Youtube Channel : http://www.youtube.com/channel/UCpp87MTauAmcEx8M3MvNwqQ 
 
-Facebook: https://www.facebook.com/profile.php?id=100003468655180
+Author Facebook: https://www.facebook.com/profile.php?id=100003468655180

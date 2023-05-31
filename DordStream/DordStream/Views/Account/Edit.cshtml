@@ -1,0 +1,44 @@
+﻿@model DordStreamCMS.Models.ViewAccount
+@{
+    ViewData["Title"] = "Edit Profile";
+    Layout = "_AccountLayout";
+}
+<div class="card shadow-lg mr-auto ml-auto edit-card mt-3">
+    <div class="card-header bg-transparent">
+        <h3 class="card-title">Edit Profile</h3>
+    </div>
+    <div class="card-body text-center">
+        <form asp-route="Edit" method="post" asp-antiforgery="false">
+            <div asp-validation-summary="All" class="text-danger mb-3"></div>
+            <div class="input-group mt-5">
+                <h6 class="card-title">Name</h6>
+                <p class="card-text ml-5">@Model.Name</p>
+            </div>
+            <div class="input-group mt-5">
+                <h6 class="card-title">UserName</h6>
+                <p class="card-text ml-5">@Model.UserName</p>
+            </div>
+            <div class="input-group mt-5">
+                <h6 class="card-title">Role</h6>
+                <p class="card-text ml-5">@Model.Role</p>
+            </div>
+            <div class="input-group mt-5">
+                <h6 class="card-title">EmailConfirmed</h6>
+                <p class="card-text ml-5">@(Model.EmailConfirmed==true ? "Verified": "Not Verified")</p>
+            </div>
+            <div class="input-group mt-5 align-items-baseline">
+                <h6 class="card-title">Email</h6>
+                <input type="email" placeholder="Email" class="form-control ml-5" asp-for="Email" />
+            </div>
+            <div class="input-group mt-5">
+                <h6 class="card-title">Date</h6>
+                <p class="card-text ml-5">@Model.RegisteredDate.ToLongDateString()</p>
+            </div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group mt-5">
+                <button type="submit" class="btn btn-primary">Update</button>
+            </div>
+        </form>
+
+    </div>
+</div>

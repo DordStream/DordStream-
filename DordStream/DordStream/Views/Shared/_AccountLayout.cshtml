@@ -1,0 +1,31 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="overflow-auto">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="Bcwebton Technologies" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <title>@ViewData["Title"]</title>
+
+
+    <link rel="stylesheet" href="/adminwwwroot/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/adminwwwroot/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="/adminwwwroot/css/accountSytle.css" />
+    @await RenderSectionAsync("style",false)
+</head>
+<body id="body">
+    <div class="container mt-3">
+        @RenderBody()
+    </div>
+
+
+
+    <script src="/adminwwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/adminwwwroot/font-awesome/js/all.min.js"></script>
+    <script src="/adminwwwroot/lib/jquery/dist/jquery.min.js"></script>
+    @await RenderSectionAsync("scripts", false)
+
+</body>
+</html>

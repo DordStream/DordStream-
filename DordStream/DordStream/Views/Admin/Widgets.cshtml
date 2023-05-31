@@ -1,0 +1,35 @@
+﻿@model string
+@{
+    ViewData["Title"] = "Widgets";
+    Layout = "_AdminLayout";
+}
+@section scripts{
+    <script>
+        $(".spinner").css("display", "none");
+    </script>
+}
+<div class="container-fluid right-over-flow right-over-flow-f pl-2 shadow-sm border">
+
+
+
+    <ul class="list-group">
+        <listwidgets>
+            <li class="list-group-item m-3">
+
+                <div class="input-group justify-content-between">
+                    <h6 id="name"></h6>
+                    <a href="#" id="link"><i class='fa fa-plus-square'></i></a>
+
+
+                </div>
+                <p id="description"></p>
+
+            </li>
+            <input type="hidden" id="position" value="@Model" />
+        </listwidgets>
+    </ul>
+
+
+
+
+</div>

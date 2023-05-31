@@ -1,0 +1,44 @@
+﻿@using DordStream
+@using Microsoft.AspNetCore.Html
+@model DordStream.Mail
+@{
+    ViewData["Title"] = "View Message";
+    Layout = "_AdminLayout";
+    var HtmlBody = new HtmlString(Model.Body);
+
+}
+@section Scripts{
+    <script src="/adminwwwroot/js/a4cad585-a56f-44b1-90a6-6ef98c1f41ed.js" asp-append-version="true"></script>
+
+}
+<div class="container-fluid right-over-flow">
+    <div class="border m-4"></div>
+    <div class="media mt-5 ml-5 mb-4">
+        <h5>@Model.Subject</h5>
+        <div class="media-body">
+            <span class="badge badge-secondary badge-pill p-1 ml-3">@ViewData["type"]</span>
+        </div>
+    </div>
+    <div class="message-container">
+
+
+        <div class="media">
+            <div class="message-text">
+                <p>@Model.FromName.FirstOrDefault().ToString()</p>
+            </div>
+            <p>@Model.From</p>
+        </div>
+        <div class="media ml-auto">
+            <span>@Model.MessageDate.ToLongDateString()</span>
+            <a href="#">
+                <span class="fa fa-reply message-icon" title="Reply"></span>
+            </a>
+        </div>
+
+    </div>
+    <div class="message-content">
+        @HtmlBody
+
+
+    </div>
+</div>
