@@ -7,6 +7,10 @@ DordStream provides two mode of Development
 1.  Website : DordStream will allow you to create a website from scratch without writing any backend code. just Html and CSS. such as blog and website
 2. Web Application : DordStream will allow you to create or develop a web application with basic knowledge in C#. such as web software. e.g Amazon, Facebook, Attendance Sheet and so on
 
+DordStream Downloand Links
+
+1. [DordStream Studio (x64) 64bits ](https://drive.google.com/file/d/1E7hvzzY_-D2TiSKnRcNselhJMINhPl7Y/view?usp=drive_link)
+2. [DordStream Studio (x86) 32bits](https://drive.google.com/file/d/1XXTIRdgTC6HjeoH6RY25XJAwNm4PcG-W/view?usp=drive_link)
 
 Benefits of Using DordStream
 
